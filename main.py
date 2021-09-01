@@ -16,16 +16,16 @@ def main(event, context):
     utils.initLog('log.txt')
     utils.clearLog()
     savePoint(
-        'https://etproxypool.ga/clash/proxies?nc=CN&speed=30&type=vmess', 'vmess.txt')
+        'https://etproxypool.ga/clash/proxies?nc=CN,HK,TW&speed=30&type=vmess', 'vmess.txt')
 
     savePoint(
-        'https://etproxypool.ga/clash/proxies?nc=CN&speed=30&type=ss', 'ss.txt')
+        'https://etproxypool.ga/clash/proxies?nc=CN,HK,TW&speed=30&type=ss', 'ss.txt')
 
     savePoint(
-        'https://etproxypool.ga/clash/proxies?nc=CN&speed=30&type=ssr', 'ssr.txt')
+        'https://etproxypool.ga/clash/proxies?nc=CN,HK,TW&speed=30&type=ssr', 'ssr.txt')
 
     savePoint(
-        'https://etproxypool.ga/clash/proxies?nc=CN&speed=30&type=trojan', 'trojan.txt')
+        'https://etproxypool.ga/clash/proxies?nc=CN,HK,TW&speed=30&type=trojan', 'trojan.txt')
 
 
 # 获取文章地址
