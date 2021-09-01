@@ -24,30 +24,43 @@ https://github.com/skywolf627/VmessActions
 ============================================================================
 
 在线抓取
+
 https://proxies.bihai.cf/
 
 https://etproxypool.ga/
 
 
+
 节点筛选
+
 Provider
-所有节点	https://proxies.bihai.cf/clash/proxies	
-筛选节点示例	https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW&speed=15,30&type=ss
-https://proxies.bihai.cf/clash/proxies?filter=1	
+
+所有节点示例    https://proxies.bihai.cf/clash/proxies	
+
+筛选节点示例    https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW&speed=15,30&type=ss
+
+               https://proxies.bihai.cf/clash/proxies?filter=1	
+               
 ❗️节点过多会造成软件卡顿，可以自行筛选节点后修改配置文件的proxy-provider部分。
+
 Provider筛选参数
+
 🌟 使用URL Query对Clash Provider进行筛选
 
-Query Key	Query Value	备注
-类型	type	ss,ssr,vmess,trojan	可同时选择多个类型
-国家	c	AT,CN,IN,HK,JP,NL,RU,SG,TW,US...	可同时选择多个国家
-排除国家	nc	AT,CN,IN,HK,JP,NL,RU,SG,TW,US...	可同时选择多个国家
-速度	speed	任何数字	单个数字选择最低速度
-两个数字选择速度区间
-过滤	filter	1,2	默认：不进行过滤
-1:选择中转节点
-2:选择pool节点
-3:选择中转与pool节点
+                Query Key        Query Value                        备注
+                
+类型	          type	           ss,ssr,vmess,trojan	              可同时选择多个类型
+
+国家	          c	               AT,CN,IN,HK,JP,NL,RU,SG,TW,US...	  可同时选择多个国家
+
+排除国家	      nc	             AT,CN,IN,HK,JP,NL,RU,SG,TW,US...	   可同时选择多个国家
+
+速度	          speed	           任何数字	                           单个数字选择最低速度,两个数字选择速度区间
+
+过滤	          filter	         1,2	                              默认：不进行过滤
+                                                                   1:选择中转节点
+                                                                   2:选择pool节点
+                                                                   3:选择中转与pool节点
 
 
 
@@ -57,6 +70,7 @@ Query Key	Query Value	备注
 
 
 订阅转换
+
 （1）    https://suc.bihai.ml/sub?target=clash&new_name=true&url=<<<<ss,ssr,vmess,trojan地址>>>>&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
 
 （2）    https://subsc.ednovas.xyz/sub?target=clash&url=<<<<ss,ssr,vmess,trojan地址>>>>&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&expand=true&new_name=true
