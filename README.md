@@ -60,7 +60,7 @@
 
 ## 订阅转换
 
-> - https://suc.bihai.ml/sub?target=clash&new_name=true&url=<<<<ss,ssr,vmess,trojan地址>>>>&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
+> - https://suc.bihai.ml/sub?target=clash&new_name=true&url=<<<<ss,ssr,vmess,trojan地址1>>>>|<<<<ss,ssr,vmess,trojan地址2>>>>&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
 
 > - https://subsc.ednovas.xyz/sub?target=clash&url=<<<<ss,ssr,vmess,trojan地址>>>>&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&expand=true&new_name=true
 
