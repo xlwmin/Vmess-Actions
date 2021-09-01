@@ -26,6 +26,8 @@
 
 > - https://sspool.nl/
 
+> - https://sspool.herokuapp.com/
+
 <br>
 
 ## 节点筛选
