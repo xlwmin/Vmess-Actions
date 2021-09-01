@@ -16,16 +16,16 @@ def main(event, context):
     utils.initLog('log.txt')
     utils.clearLog()
     savePoint(
-        'https://etproxypool.ga/clash/proxies?nc=CN,HK,TW&speed=30&type=vmess', 'vmess.txt')
+        'https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=10,50&type=vmess', 'vmess.txt')
 
     savePoint(
-        'https://etproxypool.ga/clash/proxies?nc=CN,HK,TW&speed=30&type=ss', 'ss.txt')
+        'https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=10,50&type=ss', 'ss.txt')
 
     savePoint(
-        'https://etproxypool.ga/clash/proxies?nc=CN,HK,TW&speed=30&type=ssr', 'ssr.txt')
+        'https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=10,50&type=ssr', 'ssr.txt')
 
     savePoint(
-        'https://etproxypool.ga/clash/proxies?nc=CN,HK,TW&speed=30&type=trojan', 'trojan.txt')
+        'https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=10,50&type=trojan', 'trojan.txt')
 
 #    savePoint(
 #        'https://subsc.ednovas.xyz/sub?target=clash&url=https://raw.githubusercontent.com/ldir92664/Vmess-Actions/main/subscribe/vmess.txt&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&expand=true&new_name=true', 'clash.yml')
@@ -33,9 +33,14 @@ def main(event, context):
 #    savePoint(
 #        'https://suo.yt/RvwZNEH', 'clash.yml')
 
+#    savePoint(
+#        'https://suc.bihai.ml/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2Fldir92664%2FVmess-Actions%2Fmain%2Fsubscribe%2Fvmess.txt%7Chttps%3A%2F%2Fraw.githubusercontent.com%2Fldir92664%2FVmess-Actions%2Fmain%2Fsubscribe%2Ftrojan.txt&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini', 'clash.yml')
+
     savePoint(
-        'https://suc.bihai.ml/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2Fldir92664%2FVmess-Actions%2Fmain%2Fsubscribe%2Fvmess.txt%7Chttps%3A%2F%2Fraw.githubusercontent.com%2Fldir92664%2FVmess-Actions%2Fmain%2Fsubscribe%2Ftrojan.txt&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini', 'clash.yml')
-# 获取文章地址
+        'https://pub-api-1.bianyuan.xyz/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fldir92664%2FVmess-Actions%2Fmain%2Fsubscribe%2Fvmess.txt%7Chttps%3A%2F%2Fraw.githubusercontent.com%2Flhttps%3A%2F%2Fraw.githubusercontent.com%2Fldir92664%2FVmess-Actions%2Fmain%2Fsubscribe%2Fvmess.txt%7Chttps%3A%2F%2Fraw.githubusercontent.com%2Fldir92664%2FVmess-Actions%2Fmain%2Fsubscribe%2Ftrojan.txtdir92664%2FVmess-Actions%2Fmain%2Fsubscribe%2Ftrojan.txt&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true', 'clash.yml')
+
+    
+    # 获取文章地址
 
 
 def savePoint(url, name):
