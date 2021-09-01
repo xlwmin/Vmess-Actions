@@ -10,16 +10,13 @@
 
 部分国内网络貌似无法直接访问  https://raw.githubusercontent.com  会导致你的软件第一次拉取订阅的时候 拉取不到节点。这个时候手动在github找到对应的订阅文件，打开文件把节点信息手动录入到软件即可。或者自己找个免费梯子用来拉取节点。
 
-
-
 目前抓取的节点速度看youtubu 4k 不卡，电报基本秒开。
-
 
 订阅节点仅作学习交流用，用于查找资料，学习知识，不要做任何违法行为。所有资源均来自互联网，非盈利目的，仅供大家交流学习使用，出现违法问题概不负责。
 
 > - https://github.com/skywolf627/VmessActions
 
----
+<br>
 
 ## 在线抓取
  
@@ -29,7 +26,7 @@
 
 > - https://sspool.nl/
 
----
+<br>
 
 ## 节点筛选
 
@@ -57,7 +54,7 @@
 | 速度            | speed          | 任何数字                                | 单个数字选择最低速度,两个数字选择速度区间                                                   |
 | 过滤            | filter         | 1,2                                    | 默认：不进行过滤 1:选择中转节点 2:选择pool节点 3:选择中转与pool节点                                |
 
----
+<br>
 
 ## 订阅转换
 
@@ -65,7 +62,7 @@
 
 > - https://subsc.ednovas.xyz/sub?target=clash&url=<<<<ss,ssr,vmess,trojan地址>>>>&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&expand=true&new_name=true
 
----
+<br>
 
 ## 相关收藏
 
