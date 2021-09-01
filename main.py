@@ -27,8 +27,11 @@ def main(event, context):
     savePoint(
         'https://etproxypool.ga/clash/proxies?nc=CN,HK,TW&speed=30&type=trojan', 'trojan.txt')
 
+#    savePoint(
+#        'https://subsc.ednovas.xyz/sub?target=clash&url=https://raw.githubusercontent.com/ldir92664/Vmess-Actions/main/subscribe/vmess.txt&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&expand=true&new_name=true', 'clash.yml')
+
     savePoint(
-        'https://subsc.ednovas.xyz/sub?target=clash&url=https://raw.githubusercontent.com/ldir92664/Vmess-Actions/main/subscribe/vmess.txt&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&expand=true&new_name=true', 'clash.yml')
+        'https://suo.yt/RvwZNEH', 'clash.yml')
 
 
 # 获取文章地址
