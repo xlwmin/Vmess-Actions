@@ -5,109 +5,93 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _829 |38.84Mb, server: 185.247.138.25, port: 15079, type: vmess, uuid: a1d846ec-9bef-4ffd-e34a-43bb06323ac3, alterId: 64, cipher: auto, tls: false, udp: true}
+  - {name: _821 |74.86Mb, server: 67.21.72.41, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.17080100.xyz}, udp: true}
+  - {name: _823 |36.78Mb, server: v1.ssrsub.one, port: 156, type: vmess, uuid: a88b0aa2-b6d3-487c-bada-5da80c3b928e, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.one}, udp: true}
+  - {name: _829 |30.03Mb, server: hk1opuy-node.3366test.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8638, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: hk1opuy-node.3366test.com}}
   - {name: _830 |74.34Mb, server: usa4a-node.3366test.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: usa4a-node.3366test.com}}
-  - {name: _831 |83.47Mb, server: 104.16.160.114, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /The-Great-Awakening_vws, ws-headers: {Host: vincent-jackson2021.ga}, udp: true}
-  - {name: _832 |30.03Mb, server: hk1opuy-node.3366test.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8638, alterId: 10, cipher: auto, tls: true, network: ws, ws-path: /ray, ws-headers: {Host: hk1opuy-node.3366test.com}}
-  - {name: _833 |54.12Mb, server: 154.84.1.217, port: 443, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.05222027.xyz}, udp: true}
-  - {name: _835 |74.86Mb, server: 67.21.72.41, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /path/310910211916, ws-headers: {Host: www.17080100.xyz}, udp: true}
-  - {name: _836 |36.78Mb, server: v1.ssrsub.one, port: 156, type: vmess, uuid: a88b0aa2-b6d3-487c-bada-5da80c3b928e, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.one}, udp: true}
-  - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: _831 |54.12Mb, server: 154.84.1.217, port: 443, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /footers, ws-headers: {Host: www.05222027.xyz}, udp: true}
+  - {name: CA_2373 |32.52Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _829 |38.84Mb
+      - _821 |74.86Mb
+      - _823 |36.78Mb
+      - _829 |30.03Mb
       - _830 |74.34Mb
-      - _831 |83.47Mb
-      - _832 |30.03Mb
-      - _833 |54.12Mb
-      - _835 |74.86Mb
-      - _836 |36.78Mb
-      - "NULL"
+      - _831 |54.12Mb
+      - CA_2373 |32.52Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _829 |38.84Mb
+      - _821 |74.86Mb
+      - _823 |36.78Mb
+      - _829 |30.03Mb
       - _830 |74.34Mb
-      - _831 |83.47Mb
-      - _832 |30.03Mb
-      - _833 |54.12Mb
-      - _835 |74.86Mb
-      - _836 |36.78Mb
-      - "NULL"
+      - _831 |54.12Mb
+      - CA_2373 |32.52Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _829 |38.84Mb
+      - _821 |74.86Mb
+      - _823 |36.78Mb
+      - _829 |30.03Mb
       - _830 |74.34Mb
-      - _831 |83.47Mb
-      - _832 |30.03Mb
-      - _833 |54.12Mb
-      - _835 |74.86Mb
-      - _836 |36.78Mb
-      - "NULL"
+      - _831 |54.12Mb
+      - CA_2373 |32.52Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _829 |38.84Mb
+      - _821 |74.86Mb
+      - _823 |36.78Mb
+      - _829 |30.03Mb
       - _830 |74.34Mb
-      - _831 |83.47Mb
-      - _832 |30.03Mb
-      - _833 |54.12Mb
-      - _835 |74.86Mb
-      - _836 |36.78Mb
-      - "NULL"
+      - _831 |54.12Mb
+      - CA_2373 |32.52Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _829 |38.84Mb
+      - _821 |74.86Mb
+      - _823 |36.78Mb
+      - _829 |30.03Mb
       - _830 |74.34Mb
-      - _831 |83.47Mb
-      - _832 |30.03Mb
-      - _833 |54.12Mb
-      - _835 |74.86Mb
-      - _836 |36.78Mb
-      - "NULL"
+      - _831 |54.12Mb
+      - CA_2373 |32.52Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _829 |38.84Mb
+      - _821 |74.86Mb
+      - _823 |36.78Mb
+      - _829 |30.03Mb
       - _830 |74.34Mb
-      - _831 |83.47Mb
-      - _832 |30.03Mb
-      - _833 |54.12Mb
-      - _835 |74.86Mb
-      - _836 |36.78Mb
-      - "NULL"
+      - _831 |54.12Mb
+      - CA_2373 |32.52Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _829 |38.84Mb
+      - _821 |74.86Mb
+      - _823 |36.78Mb
+      - _829 |30.03Mb
       - _830 |74.34Mb
-      - _831 |83.47Mb
-      - _832 |30.03Mb
-      - _833 |54.12Mb
-      - _835 |74.86Mb
-      - _836 |36.78Mb
-      - "NULL"
+      - _831 |54.12Mb
+      - CA_2373 |32.52Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,14 +114,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _829 |38.84Mb
+      - _821 |74.86Mb
+      - _823 |36.78Mb
+      - _829 |30.03Mb
       - _830 |74.34Mb
-      - _831 |83.47Mb
-      - _832 |30.03Mb
-      - _833 |54.12Mb
-      - _835 |74.86Mb
-      - _836 |36.78Mb
-      - "NULL"
+      - _831 |54.12Mb
+      - CA_2373 |32.52Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
