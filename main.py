@@ -19,13 +19,13 @@ def main(event, context):
         'https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=30&type=vmess', 'vmess.txt')
 
     savePoint(
-        'https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=30&type=ss', 'ss.txt')
+        'https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=30&type=trojan', 'trojan.txt')
 
     savePoint(
         'https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=30&type=ssr', 'ssr.txt')
 
     savePoint(
-        'https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=30&type=trojan', 'trojan.txt')
+        'https://sspool.herokuapp.com/clash/proxies?nc=CN,HK,TW&speed=100&type=ss', 'ss.txt')
 
 #    savePoint(
 #        'https://subsc.ednovas.xyz/sub?target=clash&url=https://raw.githubusercontent.com/ldir92664/Vmess-Actions/main/subscribe/vmess.txt&insert=false&config=https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&expand=true&new_name=true', 'clash.yml')
