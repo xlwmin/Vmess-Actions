@@ -5,8 +5,8 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _835 |257.49Mb, server: 104.17.251.27, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: calm-snow-beb3.6663901.workers.dev}, udp: true}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: CA_2357 |57.38Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
   - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
@@ -14,8 +14,8 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _835 |257.49Mb
       - "NULL"
+      - CA_2357 |57.38Mb
       - NULL 2
   - name: ♻️ 自动选择
     type: url-test
@@ -23,8 +23,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - _835 |257.49Mb
       - "NULL"
+      - CA_2357 |57.38Mb
       - NULL 2
   - name: 🌍 国外媒体
     type: select
@@ -32,32 +32,32 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _835 |257.49Mb
       - "NULL"
+      - CA_2357 |57.38Mb
       - NULL 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _835 |257.49Mb
       - "NULL"
+      - CA_2357 |57.38Mb
       - NULL 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _835 |257.49Mb
       - "NULL"
+      - CA_2357 |57.38Mb
       - NULL 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _835 |257.49Mb
       - "NULL"
+      - CA_2357 |57.38Mb
       - NULL 2
   - name: 📢 谷歌FCM
     type: select
@@ -65,8 +65,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _835 |257.49Mb
       - "NULL"
+      - CA_2357 |57.38Mb
       - NULL 2
   - name: 🎯 全球直连
     type: select
@@ -90,8 +90,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _835 |257.49Mb
       - "NULL"
+      - CA_2357 |57.38Mb
       - NULL 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
@@ -176,6 +176,8 @@ rules:
  - DOMAIN-SUFFIX,googleadsserving.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,googlecommerce.com,🛑 全球拦截
  - DOMAIN-SUFFIX,googlesyndication.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,googletagmanager.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,googletagservices.com,🛑 全球拦截
  - DOMAIN-SUFFIX,mobileads.google.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pagead-tpc.l.google.com,🛑 全球拦截
  - DOMAIN-SUFFIX,pagead.google.com,🛑 全球拦截
