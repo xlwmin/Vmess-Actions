@@ -5,101 +5,77 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _864 |55.54Mb, server: cdn08.ssrsub.com, port: 443, type: vmess, uuid: 2faeb94c-1be6-4e31-a30c-c0cbf5f4a1d5, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: cdn08.ssrsub.com}, udp: true}
-  - {name: _872 |30.16Mb, server: cdn01.ssrsub.com, port: 443, type: vmess, uuid: 2faeb94c-1be6-4e31-a30c-c0cbf5f4a1d5, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: cdn01.ssrsub.com}, udp: true}
-  - {name: _894 |32.69Mb, server: t8.ssrsub.com, port: 8443, type: trojan, password: 2faeb94c-1be6-4e31-a30c-c0cbf5f4a1d5, sni: t8.ssrsub.com, udp: true}
-  - {name: CA_2444 |64.09Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: CA_2327 |32.36Mb, server: ssr3.ssrsub.com, port: 38139, type: ssr, cipher: aes-256-cfb, password: suo.yt/ssrsub, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: _59 |170.94Mb, server: 143.244.60.162, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: _136 |183.12Mb, server: 37.19.211.92, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: _884 |38.59Mb, server: cdn08.ssrsub.com, port: 443, type: vmess, uuid: 2faeb94c-1be6-4e31-a30c-c0cbf5f4a1d5, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: cdn08.ssrsub.com}, udp: true}
+  - {name: CA_2450 |64.09Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: CA_2332 |32.36Mb, server: ssr3.ssrsub.com, port: 38139, type: ssr, cipher: aes-256-cfb, password: suo.yt/ssrsub, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _864 |55.54Mb
-      - _872 |30.16Mb
-      - _894 |32.69Mb
-      - CA_2444 |64.09Mb
-      - CA_2327 |32.36Mb
-      - _59 |170.94Mb
-      - _136 |183.12Mb
+      - _884 |38.59Mb
+      - CA_2450 |64.09Mb
+      - CA_2332 |32.36Mb
+      - "NULL"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _864 |55.54Mb
-      - _872 |30.16Mb
-      - _894 |32.69Mb
-      - CA_2444 |64.09Mb
-      - CA_2327 |32.36Mb
-      - _59 |170.94Mb
-      - _136 |183.12Mb
+      - _884 |38.59Mb
+      - CA_2450 |64.09Mb
+      - CA_2332 |32.36Mb
+      - "NULL"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _864 |55.54Mb
-      - _872 |30.16Mb
-      - _894 |32.69Mb
-      - CA_2444 |64.09Mb
-      - CA_2327 |32.36Mb
-      - _59 |170.94Mb
-      - _136 |183.12Mb
+      - _884 |38.59Mb
+      - CA_2450 |64.09Mb
+      - CA_2332 |32.36Mb
+      - "NULL"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _864 |55.54Mb
-      - _872 |30.16Mb
-      - _894 |32.69Mb
-      - CA_2444 |64.09Mb
-      - CA_2327 |32.36Mb
-      - _59 |170.94Mb
-      - _136 |183.12Mb
+      - _884 |38.59Mb
+      - CA_2450 |64.09Mb
+      - CA_2332 |32.36Mb
+      - "NULL"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _864 |55.54Mb
-      - _872 |30.16Mb
-      - _894 |32.69Mb
-      - CA_2444 |64.09Mb
-      - CA_2327 |32.36Mb
-      - _59 |170.94Mb
-      - _136 |183.12Mb
+      - _884 |38.59Mb
+      - CA_2450 |64.09Mb
+      - CA_2332 |32.36Mb
+      - "NULL"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _864 |55.54Mb
-      - _872 |30.16Mb
-      - _894 |32.69Mb
-      - CA_2444 |64.09Mb
-      - CA_2327 |32.36Mb
-      - _59 |170.94Mb
-      - _136 |183.12Mb
+      - _884 |38.59Mb
+      - CA_2450 |64.09Mb
+      - CA_2332 |32.36Mb
+      - "NULL"
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _864 |55.54Mb
-      - _872 |30.16Mb
-      - _894 |32.69Mb
-      - CA_2444 |64.09Mb
-      - CA_2327 |32.36Mb
-      - _59 |170.94Mb
-      - _136 |183.12Mb
+      - _884 |38.59Mb
+      - CA_2450 |64.09Mb
+      - CA_2332 |32.36Mb
+      - "NULL"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -122,13 +98,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _864 |55.54Mb
-      - _872 |30.16Mb
-      - _894 |32.69Mb
-      - CA_2444 |64.09Mb
-      - CA_2327 |32.36Mb
-      - _59 |170.94Mb
-      - _136 |183.12Mb
+      - _884 |38.59Mb
+      - CA_2450 |64.09Mb
+      - CA_2332 |32.36Mb
+      - "NULL"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
