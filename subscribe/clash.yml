@@ -6,10 +6,9 @@ log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: CA_2245 |32.91Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
   - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: _19 |111.99Mb, server: 212.102.44.81, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: _275 |146.70Mb, server: 87.101.93.187, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: NULL 3, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: _359 |260.87Mb, server: 195.181.171.247, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -17,10 +16,9 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - "NULL"
-      - CA_2245 |32.91Mb
       - NULL 2
-      - _19 |111.99Mb
-      - _275 |146.70Mb
+      - NULL 3
+      - _359 |260.87Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -28,10 +26,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - "NULL"
-      - CA_2245 |32.91Mb
       - NULL 2
-      - _19 |111.99Mb
-      - _275 |146.70Mb
+      - NULL 3
+      - _359 |260.87Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -39,40 +36,36 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - "NULL"
-      - CA_2245 |32.91Mb
       - NULL 2
-      - _19 |111.99Mb
-      - _275 |146.70Mb
+      - NULL 3
+      - _359 |260.87Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - "NULL"
-      - CA_2245 |32.91Mb
       - NULL 2
-      - _19 |111.99Mb
-      - _275 |146.70Mb
+      - NULL 3
+      - _359 |260.87Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - "NULL"
-      - CA_2245 |32.91Mb
       - NULL 2
-      - _19 |111.99Mb
-      - _275 |146.70Mb
+      - NULL 3
+      - _359 |260.87Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - "NULL"
-      - CA_2245 |32.91Mb
       - NULL 2
-      - _19 |111.99Mb
-      - _275 |146.70Mb
+      - NULL 3
+      - _359 |260.87Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -80,10 +73,9 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - "NULL"
-      - CA_2245 |32.91Mb
       - NULL 2
-      - _19 |111.99Mb
-      - _275 |146.70Mb
+      - NULL 3
+      - _359 |260.87Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -107,10 +99,9 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - "NULL"
-      - CA_2245 |32.91Mb
       - NULL 2
-      - _19 |111.99Mb
-      - _275 |146.70Mb
+      - NULL 3
+      - _359 |260.87Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
