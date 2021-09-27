@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _820 |63.00Mb, server: cdn08.ssrsub.com, port: 443, type: vmess, uuid: 2faeb94c-1be6-4e31-a30c-c0cbf5f4a1d5, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: cdn08.ssrsub.com}, udp: true}
-  - {name: _825 |68.28Mb, server: v8.ssrsub.com, port: 156, type: vmess, uuid: 2faeb94c-1be6-4e31-a30c-c0cbf5f4a1d5, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
-  - {name: _834 |58.21Mb, server: t8.ssrsub.com, port: 8443, type: trojan, password: 2faeb94c-1be6-4e31-a30c-c0cbf5f4a1d5, sni: t8.ssrsub.com, udp: true}
-  - {name: _835 |59.15Mb, server: t1.ssrsub.com, port: 8443, type: trojan, password: 2faeb94c-1be6-4e31-a30c-c0cbf5f4a1d5, sni: t1.ssrsub.com, udp: true}
-  - {name: _839 |53.32Mb, server: t1.ssrsub.com, port: 8443, type: trojan, password: 40879770-9fd5-461b-928f-7688bfff6e42, sni: t1.ssrsub.com, udp: true}
-  - {name: _842 |146.23Mb, server: t8.ssrsub.com, port: 8443, type: trojan, password: 40879770-9fd5-461b-928f-7688bfff6e42, sni: t8.ssrsub.com, udp: true}
+  - {name: _802 |63.00Mb, server: cdn08.ssrsub.com, port: 443, type: vmess, uuid: 2faeb94c-1be6-4e31-a30c-c0cbf5f4a1d5, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: cdn08.ssrsub.com}, udp: true}
+  - {name: _805 |68.28Mb, server: v8.ssrsub.com, port: 156, type: vmess, uuid: 2faeb94c-1be6-4e31-a30c-c0cbf5f4a1d5, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
+  - {name: _813 |59.15Mb, server: t1.ssrsub.com, port: 8443, type: trojan, password: 2faeb94c-1be6-4e31-a30c-c0cbf5f4a1d5, sni: t1.ssrsub.com, udp: true}
+  - {name: _815 |53.32Mb, server: t1.ssrsub.com, port: 8443, type: trojan, password: 40879770-9fd5-461b-928f-7688bfff6e42, sni: t1.ssrsub.com, udp: true}
+  - {name: _818 |146.23Mb, server: t8.ssrsub.com, port: 8443, type: trojan, password: 40879770-9fd5-461b-928f-7688bfff6e42, sni: t8.ssrsub.com, udp: true}
+  - {name: _819 |58.21Mb, server: t8.ssrsub.com, port: 8443, type: trojan, password: 2faeb94c-1be6-4e31-a30c-c0cbf5f4a1d5, sni: t8.ssrsub.com, udp: true}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
@@ -18,12 +18,12 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _820 |63.00Mb
-      - _825 |68.28Mb
-      - _834 |58.21Mb
-      - _835 |59.15Mb
-      - _839 |53.32Mb
-      - _842 |146.23Mb
+      - _802 |63.00Mb
+      - _805 |68.28Mb
+      - _813 |59.15Mb
+      - _815 |53.32Mb
+      - _818 |146.23Mb
+      - _819 |58.21Mb
       - "NULL"
   - name: ♻️ 自动选择
     type: url-test
@@ -31,12 +31,12 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - _820 |63.00Mb
-      - _825 |68.28Mb
-      - _834 |58.21Mb
-      - _835 |59.15Mb
-      - _839 |53.32Mb
-      - _842 |146.23Mb
+      - _802 |63.00Mb
+      - _805 |68.28Mb
+      - _813 |59.15Mb
+      - _815 |53.32Mb
+      - _818 |146.23Mb
+      - _819 |58.21Mb
       - "NULL"
   - name: 🌍 国外媒体
     type: select
@@ -44,48 +44,48 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _820 |63.00Mb
-      - _825 |68.28Mb
-      - _834 |58.21Mb
-      - _835 |59.15Mb
-      - _839 |53.32Mb
-      - _842 |146.23Mb
+      - _802 |63.00Mb
+      - _805 |68.28Mb
+      - _813 |59.15Mb
+      - _815 |53.32Mb
+      - _818 |146.23Mb
+      - _819 |58.21Mb
       - "NULL"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _820 |63.00Mb
-      - _825 |68.28Mb
-      - _834 |58.21Mb
-      - _835 |59.15Mb
-      - _839 |53.32Mb
-      - _842 |146.23Mb
+      - _802 |63.00Mb
+      - _805 |68.28Mb
+      - _813 |59.15Mb
+      - _815 |53.32Mb
+      - _818 |146.23Mb
+      - _819 |58.21Mb
       - "NULL"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _820 |63.00Mb
-      - _825 |68.28Mb
-      - _834 |58.21Mb
-      - _835 |59.15Mb
-      - _839 |53.32Mb
-      - _842 |146.23Mb
+      - _802 |63.00Mb
+      - _805 |68.28Mb
+      - _813 |59.15Mb
+      - _815 |53.32Mb
+      - _818 |146.23Mb
+      - _819 |58.21Mb
       - "NULL"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _820 |63.00Mb
-      - _825 |68.28Mb
-      - _834 |58.21Mb
-      - _835 |59.15Mb
-      - _839 |53.32Mb
-      - _842 |146.23Mb
+      - _802 |63.00Mb
+      - _805 |68.28Mb
+      - _813 |59.15Mb
+      - _815 |53.32Mb
+      - _818 |146.23Mb
+      - _819 |58.21Mb
       - "NULL"
   - name: 📢 谷歌FCM
     type: select
@@ -93,12 +93,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _820 |63.00Mb
-      - _825 |68.28Mb
-      - _834 |58.21Mb
-      - _835 |59.15Mb
-      - _839 |53.32Mb
-      - _842 |146.23Mb
+      - _802 |63.00Mb
+      - _805 |68.28Mb
+      - _813 |59.15Mb
+      - _815 |53.32Mb
+      - _818 |146.23Mb
+      - _819 |58.21Mb
       - "NULL"
   - name: 🎯 全球直连
     type: select
@@ -122,12 +122,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _820 |63.00Mb
-      - _825 |68.28Mb
-      - _834 |58.21Mb
-      - _835 |59.15Mb
-      - _839 |53.32Mb
-      - _842 |146.23Mb
+      - _802 |63.00Mb
+      - _805 |68.28Mb
+      - _813 |59.15Mb
+      - _815 |53.32Mb
+      - _818 |146.23Mb
+      - _819 |58.21Mb
       - "NULL"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
