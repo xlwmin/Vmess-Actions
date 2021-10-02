@@ -5,8 +5,9 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇦🇺 AU_1641 |34.55Mb, server: 1.1.1.100, port: 443, type: vmess, uuid: 4f672ab6-25e3-49e8-951a-d87b1fa75467, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ce04/, ws-headers: {Host: 1.1.1.100}}
-  - {name: CA_2364 |32.22Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 🇦🇺 AU_1642 |34.55Mb, server: 1.1.1.100, port: 443, type: vmess, uuid: 4f672ab6-25e3-49e8-951a-d87b1fa75467, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ce04/, ws-headers: {Host: 1.1.1.100}}
+  - {name: 🇺🇸 US_12631 |30.65Mb, server: bitter-rice-7a68.h14315.workers.dev, port: 443, type: vmess, uuid: 367a3b73-7fa0-4002-85dd-d270c8ec7c3d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bitter-rice-7a68.h14315.workers.dev}}
+  - {name: CA_2346 |32.22Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
@@ -14,8 +15,9 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇦🇺 AU_1641 |34.55Mb
-      - CA_2364 |32.22Mb
+      - 🇦🇺 AU_1642 |34.55Mb
+      - 🇺🇸 US_12631 |30.65Mb
+      - CA_2346 |32.22Mb
       - "NULL"
   - name: ♻️ 自动选择
     type: url-test
@@ -23,8 +25,9 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇦🇺 AU_1641 |34.55Mb
-      - CA_2364 |32.22Mb
+      - 🇦🇺 AU_1642 |34.55Mb
+      - 🇺🇸 US_12631 |30.65Mb
+      - CA_2346 |32.22Mb
       - "NULL"
   - name: 🌍 国外媒体
     type: select
@@ -32,32 +35,36 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇦🇺 AU_1641 |34.55Mb
-      - CA_2364 |32.22Mb
+      - 🇦🇺 AU_1642 |34.55Mb
+      - 🇺🇸 US_12631 |30.65Mb
+      - CA_2346 |32.22Mb
       - "NULL"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇦🇺 AU_1641 |34.55Mb
-      - CA_2364 |32.22Mb
+      - 🇦🇺 AU_1642 |34.55Mb
+      - 🇺🇸 US_12631 |30.65Mb
+      - CA_2346 |32.22Mb
       - "NULL"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇦🇺 AU_1641 |34.55Mb
-      - CA_2364 |32.22Mb
+      - 🇦🇺 AU_1642 |34.55Mb
+      - 🇺🇸 US_12631 |30.65Mb
+      - CA_2346 |32.22Mb
       - "NULL"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇦🇺 AU_1641 |34.55Mb
-      - CA_2364 |32.22Mb
+      - 🇦🇺 AU_1642 |34.55Mb
+      - 🇺🇸 US_12631 |30.65Mb
+      - CA_2346 |32.22Mb
       - "NULL"
   - name: 📢 谷歌FCM
     type: select
@@ -65,8 +72,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇦🇺 AU_1641 |34.55Mb
-      - CA_2364 |32.22Mb
+      - 🇦🇺 AU_1642 |34.55Mb
+      - 🇺🇸 US_12631 |30.65Mb
+      - CA_2346 |32.22Mb
       - "NULL"
   - name: 🎯 全球直连
     type: select
@@ -90,8 +98,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇦🇺 AU_1641 |34.55Mb
-      - CA_2364 |32.22Mb
+      - 🇦🇺 AU_1642 |34.55Mb
+      - 🇺🇸 US_12631 |30.65Mb
+      - CA_2346 |32.22Mb
       - "NULL"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
