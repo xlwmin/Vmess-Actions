@@ -5,69 +5,109 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+  - {name: _795 |132.22Mb, server: v8.ssrsub.com, port: 158, type: vmess, uuid: 683ec608-5af9-4f91-bd5b-ce493307fe56, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
+  - {name: _796 |41.39Mb, server: v1.ssrsub.com, port: 158, type: vmess, uuid: dde769da-8da0-47d8-bda4-192c761f882a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: _800 |56.77Mb, server: v8.ssrsub.com, port: 158, type: vmess, uuid: dde769da-8da0-47d8-bda4-192c761f882a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
+  - {name: _803 |42.61Mb, server: t1.ssrsub.com, port: 8443, type: trojan, password: dde769da-8da0-47d8-bda4-192c761f882a, sni: t1.ssrsub.com, udp: true}
+  - {name: _808 |191.68Mb, server: t8.ssrsub.com, port: 8443, type: trojan, password: dde769da-8da0-47d8-bda4-192c761f882a, sni: t8.ssrsub.com, udp: true}
+  - {name: _809 |49.64Mb, server: t1.ssrsub.com, port: 8443, type: trojan, password: 683ec608-5af9-4f91-bd5b-ce493307fe56, sni: t1.ssrsub.com, udp: true}
+  - {name: _813 |115.93Mb, server: t8.ssrsub.com, port: 8443, type: trojan, password: 683ec608-5af9-4f91-bd5b-ce493307fe56, sni: t8.ssrsub.com, udp: true}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 3, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - _795 |132.22Mb
+      - _796 |41.39Mb
+      - _800 |56.77Mb
+      - _803 |42.61Mb
+      - _808 |191.68Mb
+      - _809 |49.64Mb
+      - _813 |115.93Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - _795 |132.22Mb
+      - _796 |41.39Mb
+      - _800 |56.77Mb
+      - _803 |42.61Mb
+      - _808 |191.68Mb
+      - _809 |49.64Mb
+      - _813 |115.93Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - _795 |132.22Mb
+      - _796 |41.39Mb
+      - _800 |56.77Mb
+      - _803 |42.61Mb
+      - _808 |191.68Mb
+      - _809 |49.64Mb
+      - _813 |115.93Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - _795 |132.22Mb
+      - _796 |41.39Mb
+      - _800 |56.77Mb
+      - _803 |42.61Mb
+      - _808 |191.68Mb
+      - _809 |49.64Mb
+      - _813 |115.93Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - _795 |132.22Mb
+      - _796 |41.39Mb
+      - _800 |56.77Mb
+      - _803 |42.61Mb
+      - _808 |191.68Mb
+      - _809 |49.64Mb
+      - _813 |115.93Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - _795 |132.22Mb
+      - _796 |41.39Mb
+      - _800 |56.77Mb
+      - _803 |42.61Mb
+      - _808 |191.68Mb
+      - _809 |49.64Mb
+      - _813 |115.93Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - _795 |132.22Mb
+      - _796 |41.39Mb
+      - _800 |56.77Mb
+      - _803 |42.61Mb
+      - _808 |191.68Mb
+      - _809 |49.64Mb
+      - _813 |115.93Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,9 +130,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - _795 |132.22Mb
+      - _796 |41.39Mb
+      - _800 |56.77Mb
+      - _803 |42.61Mb
+      - _808 |191.68Mb
+      - _809 |49.64Mb
+      - _813 |115.93Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
