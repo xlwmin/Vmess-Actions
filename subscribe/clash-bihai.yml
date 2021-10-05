@@ -5,173 +5,69 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _761 |33.30Mb, server: v8.ssrsub.com, port: 158, type: vmess, uuid: dde769da-8da0-47d8-bda4-192c761f882a, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
-  - {name: _766 |32.10Mb, server: v8.ssrsub.com, port: 158, type: vmess, uuid: 683ec608-5af9-4f91-bd5b-ce493307fe56, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
-  - {name: 🇺🇸 US_19060 |52.95Mb, server: 149.248.19.78, port: 443, type: vmess, uuid: 79214731-7f0c-4f2d-a894-13b7df293624, alterId: 60, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sadfasdf, ws-headers: {Host: 149.248.19.78}}
-  - {name: 🇺🇸 US_19061 |34.52Mb, server: v3.coding996.com, port: 443, type: vmess, uuid: 6f458069-7752-45b6-bae8-ae8ddbd95b25, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /weixin, ws-headers: {Host: v3.coding996.com}}
-  - {name: 🇺🇸 US_19082 |32.65Mb, server: thawing-river-43488.herokuapp.com, port: 443, type: vmess, uuid: 367a3b73-7fa0-4002-85dd-d270c8ec7c3d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: thawing-river-43488.herokuapp.com}}
-  - {name: _779 |33.53Mb, server: t8.ssrsub.com, port: 8443, type: trojan, password: dde769da-8da0-47d8-bda4-192c761f882a, sni: t8.ssrsub.com, udp: true}
-  - {name: _782 |37.92Mb, server: t8.ssrsub.com, port: 8443, type: trojan, password: 683ec608-5af9-4f91-bd5b-ce493307fe56, sni: t8.ssrsub.com, udp: true}
-  - {name: _786 |35.62Mb, server: t4.ssrsub.com, port: 8443, type: trojan, password: dde769da-8da0-47d8-bda4-192c761f882a, sni: t4.ssrsub.com, udp: true}
-  - {name: _788 |34.71Mb, server: t4.ssrsub.com, port: 8443, type: trojan, password: 683ec608-5af9-4f91-bd5b-ce493307fe56, sni: t4.ssrsub.com, udp: true}
-  - {name: CA_2385 |74.02Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE_3759 |51.85Mb, server: 139.59.209.152, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE_3763 |48.47Mb, server: 5.183.179.138, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL_8807 |50.90Mb, server: 89.31.127.151, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇴 RO_11174 |50.94Mb, server: 185.126.116.235, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE_3755 |52.21Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇸 US_19056 |34.28Mb, server: 207.246.64.166, port: 2019, type: ssr, cipher: aes-256-cfb, password: Life!sAwesome, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: NULL 3, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _761 |33.30Mb
-      - _766 |32.10Mb
-      - 🇺🇸 US_19060 |52.95Mb
-      - 🇺🇸 US_19061 |34.52Mb
-      - 🇺🇸 US_19082 |32.65Mb
-      - _779 |33.53Mb
-      - _782 |37.92Mb
-      - _786 |35.62Mb
-      - _788 |34.71Mb
-      - CA_2385 |74.02Mb
-      - 🇩🇪 DE_3759 |51.85Mb
-      - 🇩🇪 DE_3763 |48.47Mb
-      - 🇳🇱 NL_8807 |50.90Mb
-      - 🇷🇴 RO_11174 |50.94Mb
-      - 🇩🇪 DE_3755 |52.21Mb
-      - 🇺🇸 US_19056 |34.28Mb
+      - "NULL"
+      - NULL 2
+      - NULL 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _761 |33.30Mb
-      - _766 |32.10Mb
-      - 🇺🇸 US_19060 |52.95Mb
-      - 🇺🇸 US_19061 |34.52Mb
-      - 🇺🇸 US_19082 |32.65Mb
-      - _779 |33.53Mb
-      - _782 |37.92Mb
-      - _786 |35.62Mb
-      - _788 |34.71Mb
-      - CA_2385 |74.02Mb
-      - 🇩🇪 DE_3759 |51.85Mb
-      - 🇩🇪 DE_3763 |48.47Mb
-      - 🇳🇱 NL_8807 |50.90Mb
-      - 🇷🇴 RO_11174 |50.94Mb
-      - 🇩🇪 DE_3755 |52.21Mb
-      - 🇺🇸 US_19056 |34.28Mb
+      - "NULL"
+      - NULL 2
+      - NULL 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _761 |33.30Mb
-      - _766 |32.10Mb
-      - 🇺🇸 US_19060 |52.95Mb
-      - 🇺🇸 US_19061 |34.52Mb
-      - 🇺🇸 US_19082 |32.65Mb
-      - _779 |33.53Mb
-      - _782 |37.92Mb
-      - _786 |35.62Mb
-      - _788 |34.71Mb
-      - CA_2385 |74.02Mb
-      - 🇩🇪 DE_3759 |51.85Mb
-      - 🇩🇪 DE_3763 |48.47Mb
-      - 🇳🇱 NL_8807 |50.90Mb
-      - 🇷🇴 RO_11174 |50.94Mb
-      - 🇩🇪 DE_3755 |52.21Mb
-      - 🇺🇸 US_19056 |34.28Mb
+      - "NULL"
+      - NULL 2
+      - NULL 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _761 |33.30Mb
-      - _766 |32.10Mb
-      - 🇺🇸 US_19060 |52.95Mb
-      - 🇺🇸 US_19061 |34.52Mb
-      - 🇺🇸 US_19082 |32.65Mb
-      - _779 |33.53Mb
-      - _782 |37.92Mb
-      - _786 |35.62Mb
-      - _788 |34.71Mb
-      - CA_2385 |74.02Mb
-      - 🇩🇪 DE_3759 |51.85Mb
-      - 🇩🇪 DE_3763 |48.47Mb
-      - 🇳🇱 NL_8807 |50.90Mb
-      - 🇷🇴 RO_11174 |50.94Mb
-      - 🇩🇪 DE_3755 |52.21Mb
-      - 🇺🇸 US_19056 |34.28Mb
+      - "NULL"
+      - NULL 2
+      - NULL 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _761 |33.30Mb
-      - _766 |32.10Mb
-      - 🇺🇸 US_19060 |52.95Mb
-      - 🇺🇸 US_19061 |34.52Mb
-      - 🇺🇸 US_19082 |32.65Mb
-      - _779 |33.53Mb
-      - _782 |37.92Mb
-      - _786 |35.62Mb
-      - _788 |34.71Mb
-      - CA_2385 |74.02Mb
-      - 🇩🇪 DE_3759 |51.85Mb
-      - 🇩🇪 DE_3763 |48.47Mb
-      - 🇳🇱 NL_8807 |50.90Mb
-      - 🇷🇴 RO_11174 |50.94Mb
-      - 🇩🇪 DE_3755 |52.21Mb
-      - 🇺🇸 US_19056 |34.28Mb
+      - "NULL"
+      - NULL 2
+      - NULL 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _761 |33.30Mb
-      - _766 |32.10Mb
-      - 🇺🇸 US_19060 |52.95Mb
-      - 🇺🇸 US_19061 |34.52Mb
-      - 🇺🇸 US_19082 |32.65Mb
-      - _779 |33.53Mb
-      - _782 |37.92Mb
-      - _786 |35.62Mb
-      - _788 |34.71Mb
-      - CA_2385 |74.02Mb
-      - 🇩🇪 DE_3759 |51.85Mb
-      - 🇩🇪 DE_3763 |48.47Mb
-      - 🇳🇱 NL_8807 |50.90Mb
-      - 🇷🇴 RO_11174 |50.94Mb
-      - 🇩🇪 DE_3755 |52.21Mb
-      - 🇺🇸 US_19056 |34.28Mb
+      - "NULL"
+      - NULL 2
+      - NULL 3
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _761 |33.30Mb
-      - _766 |32.10Mb
-      - 🇺🇸 US_19060 |52.95Mb
-      - 🇺🇸 US_19061 |34.52Mb
-      - 🇺🇸 US_19082 |32.65Mb
-      - _779 |33.53Mb
-      - _782 |37.92Mb
-      - _786 |35.62Mb
-      - _788 |34.71Mb
-      - CA_2385 |74.02Mb
-      - 🇩🇪 DE_3759 |51.85Mb
-      - 🇩🇪 DE_3763 |48.47Mb
-      - 🇳🇱 NL_8807 |50.90Mb
-      - 🇷🇴 RO_11174 |50.94Mb
-      - 🇩🇪 DE_3755 |52.21Mb
-      - 🇺🇸 US_19056 |34.28Mb
+      - "NULL"
+      - NULL 2
+      - NULL 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -194,22 +90,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _761 |33.30Mb
-      - _766 |32.10Mb
-      - 🇺🇸 US_19060 |52.95Mb
-      - 🇺🇸 US_19061 |34.52Mb
-      - 🇺🇸 US_19082 |32.65Mb
-      - _779 |33.53Mb
-      - _782 |37.92Mb
-      - _786 |35.62Mb
-      - _788 |34.71Mb
-      - CA_2385 |74.02Mb
-      - 🇩🇪 DE_3759 |51.85Mb
-      - 🇩🇪 DE_3763 |48.47Mb
-      - 🇳🇱 NL_8807 |50.90Mb
-      - 🇷🇴 RO_11174 |50.94Mb
-      - 🇩🇪 DE_3755 |52.21Mb
-      - 🇺🇸 US_19056 |34.28Mb
+      - "NULL"
+      - NULL 2
+      - NULL 3
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
