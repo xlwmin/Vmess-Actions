@@ -5,101 +5,141 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _09 |71.29Mb, server: v2.ssrsub.com, port: 158, type: vmess, uuid: 360ecd87-72e8-4706-b252-79d0d0cfe6aa, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v2.ssrsub.com}, udp: true}
-  - {name: _12 |69.89Mb, server: v2.ssrsub.com, port: 158, type: vmess, uuid: 721c60a2-86a4-44c6-8f82-8fc80f6ad8ab, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v2.ssrsub.com}, udp: true}
-  - {name: _17 |74.68Mb, server: t2.ssrsub.com, port: 8443, type: trojan, password: 721c60a2-86a4-44c6-8f82-8fc80f6ad8ab, sni: t2.ssrsub.com, udp: true}
-  - {name: _18 |52.96Mb, server: t1.ssrsub.com, port: 8443, type: trojan, password: 721c60a2-86a4-44c6-8f82-8fc80f6ad8ab, sni: t1.ssrsub.com, udp: true}
-  - {name: _21 |71.23Mb, server: t2.ssrsub.com, port: 8443, type: trojan, password: 360ecd87-72e8-4706-b252-79d0d0cfe6aa, sni: t2.ssrsub.com, udp: true}
-  - {name: _22 |43.97Mb, server: t1.ssrsub.com, port: 8443, type: trojan, password: 360ecd87-72e8-4706-b252-79d0d0cfe6aa, sni: t1.ssrsub.com, udp: true}
-  - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: _02 |49.60Mb, server: v2.ssrsub.com, port: 158, type: vmess, uuid: 721c60a2-86a4-44c6-8f82-8fc80f6ad8ab, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v2.ssrsub.com}, udp: true}
+  - {name: _11 |48.32Mb, server: v2.ssrsub.com, port: 158, type: vmess, uuid: 360ecd87-72e8-4706-b252-79d0d0cfe6aa, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v2.ssrsub.com}, udp: true}
+  - {name: IE_4858 |59.72Mb, server: guarded-bayou-66094.herokuapp.com, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: guarded-bayou-66094.herokuapp.com}}
+  - {name: IL_4923 |36.75Mb, server: 212.80.205.133, port: 31262, type: vmess, uuid: 00415a68-d5eb-4573-b73e-2b21f6b45c5d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: _17 |43.97Mb, server: t1.ssrsub.com, port: 8443, type: trojan, password: 360ecd87-72e8-4706-b252-79d0d0cfe6aa, sni: t1.ssrsub.com, udp: true}
+  - {name: _18 |72.95Mb, server: t2.ssrsub.com, port: 8443, type: trojan, password: 360ecd87-72e8-4706-b252-79d0d0cfe6aa, sni: t2.ssrsub.com, udp: true}
+  - {name: _20 |49.64Mb, server: t1.ssrsub.com, port: 8443, type: trojan, password: 721c60a2-86a4-44c6-8f82-8fc80f6ad8ab, sni: t1.ssrsub.com, udp: true}
+  - {name: CA_1580 |128.54Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_2678 |46.58Mb, server: 5.183.179.138, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_2680 |47.58Mb, server: 139.59.209.152, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_2676 |47.32Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: 🇩🇪 DE_2677 |51.41Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _09 |71.29Mb
-      - _12 |69.89Mb
-      - _17 |74.68Mb
-      - _18 |52.96Mb
-      - _21 |71.23Mb
-      - _22 |43.97Mb
-      - "NULL"
+      - _02 |49.60Mb
+      - _11 |48.32Mb
+      - IE_4858 |59.72Mb
+      - IL_4923 |36.75Mb
+      - _17 |43.97Mb
+      - _18 |72.95Mb
+      - _20 |49.64Mb
+      - CA_1580 |128.54Mb
+      - 🇩🇪 DE_2678 |46.58Mb
+      - 🇩🇪 DE_2680 |47.58Mb
+      - 🇩🇪 DE_2676 |47.32Mb
+      - 🇩🇪 DE_2677 |51.41Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _09 |71.29Mb
-      - _12 |69.89Mb
-      - _17 |74.68Mb
-      - _18 |52.96Mb
-      - _21 |71.23Mb
-      - _22 |43.97Mb
-      - "NULL"
+      - _02 |49.60Mb
+      - _11 |48.32Mb
+      - IE_4858 |59.72Mb
+      - IL_4923 |36.75Mb
+      - _17 |43.97Mb
+      - _18 |72.95Mb
+      - _20 |49.64Mb
+      - CA_1580 |128.54Mb
+      - 🇩🇪 DE_2678 |46.58Mb
+      - 🇩🇪 DE_2680 |47.58Mb
+      - 🇩🇪 DE_2676 |47.32Mb
+      - 🇩🇪 DE_2677 |51.41Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _09 |71.29Mb
-      - _12 |69.89Mb
-      - _17 |74.68Mb
-      - _18 |52.96Mb
-      - _21 |71.23Mb
-      - _22 |43.97Mb
-      - "NULL"
+      - _02 |49.60Mb
+      - _11 |48.32Mb
+      - IE_4858 |59.72Mb
+      - IL_4923 |36.75Mb
+      - _17 |43.97Mb
+      - _18 |72.95Mb
+      - _20 |49.64Mb
+      - CA_1580 |128.54Mb
+      - 🇩🇪 DE_2678 |46.58Mb
+      - 🇩🇪 DE_2680 |47.58Mb
+      - 🇩🇪 DE_2676 |47.32Mb
+      - 🇩🇪 DE_2677 |51.41Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _09 |71.29Mb
-      - _12 |69.89Mb
-      - _17 |74.68Mb
-      - _18 |52.96Mb
-      - _21 |71.23Mb
-      - _22 |43.97Mb
-      - "NULL"
+      - _02 |49.60Mb
+      - _11 |48.32Mb
+      - IE_4858 |59.72Mb
+      - IL_4923 |36.75Mb
+      - _17 |43.97Mb
+      - _18 |72.95Mb
+      - _20 |49.64Mb
+      - CA_1580 |128.54Mb
+      - 🇩🇪 DE_2678 |46.58Mb
+      - 🇩🇪 DE_2680 |47.58Mb
+      - 🇩🇪 DE_2676 |47.32Mb
+      - 🇩🇪 DE_2677 |51.41Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _09 |71.29Mb
-      - _12 |69.89Mb
-      - _17 |74.68Mb
-      - _18 |52.96Mb
-      - _21 |71.23Mb
-      - _22 |43.97Mb
-      - "NULL"
+      - _02 |49.60Mb
+      - _11 |48.32Mb
+      - IE_4858 |59.72Mb
+      - IL_4923 |36.75Mb
+      - _17 |43.97Mb
+      - _18 |72.95Mb
+      - _20 |49.64Mb
+      - CA_1580 |128.54Mb
+      - 🇩🇪 DE_2678 |46.58Mb
+      - 🇩🇪 DE_2680 |47.58Mb
+      - 🇩🇪 DE_2676 |47.32Mb
+      - 🇩🇪 DE_2677 |51.41Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _09 |71.29Mb
-      - _12 |69.89Mb
-      - _17 |74.68Mb
-      - _18 |52.96Mb
-      - _21 |71.23Mb
-      - _22 |43.97Mb
-      - "NULL"
+      - _02 |49.60Mb
+      - _11 |48.32Mb
+      - IE_4858 |59.72Mb
+      - IL_4923 |36.75Mb
+      - _17 |43.97Mb
+      - _18 |72.95Mb
+      - _20 |49.64Mb
+      - CA_1580 |128.54Mb
+      - 🇩🇪 DE_2678 |46.58Mb
+      - 🇩🇪 DE_2680 |47.58Mb
+      - 🇩🇪 DE_2676 |47.32Mb
+      - 🇩🇪 DE_2677 |51.41Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _09 |71.29Mb
-      - _12 |69.89Mb
-      - _17 |74.68Mb
-      - _18 |52.96Mb
-      - _21 |71.23Mb
-      - _22 |43.97Mb
-      - "NULL"
+      - _02 |49.60Mb
+      - _11 |48.32Mb
+      - IE_4858 |59.72Mb
+      - IL_4923 |36.75Mb
+      - _17 |43.97Mb
+      - _18 |72.95Mb
+      - _20 |49.64Mb
+      - CA_1580 |128.54Mb
+      - 🇩🇪 DE_2678 |46.58Mb
+      - 🇩🇪 DE_2680 |47.58Mb
+      - 🇩🇪 DE_2676 |47.32Mb
+      - 🇩🇪 DE_2677 |51.41Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -122,13 +162,18 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _09 |71.29Mb
-      - _12 |69.89Mb
-      - _17 |74.68Mb
-      - _18 |52.96Mb
-      - _21 |71.23Mb
-      - _22 |43.97Mb
-      - "NULL"
+      - _02 |49.60Mb
+      - _11 |48.32Mb
+      - IE_4858 |59.72Mb
+      - IL_4923 |36.75Mb
+      - _17 |43.97Mb
+      - _18 |72.95Mb
+      - _20 |49.64Mb
+      - CA_1580 |128.54Mb
+      - 🇩🇪 DE_2678 |46.58Mb
+      - 🇩🇪 DE_2680 |47.58Mb
+      - 🇩🇪 DE_2676 |47.32Mb
+      - 🇩🇪 DE_2677 |51.41Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
