@@ -82,9 +82,9 @@
 
 <br>
 
-## 他们都STAR了
+## STAR的人
 [![Stargazers repo roster for @ldir92664/Vmess-Actions](https://reporoster.com/stars/ldir92664/Vmess-Actions)](https://github.com/ldir92664/Vmess-Actions/stargazers)
   
 
-## 他们都FORK了
+## FORK的人
 [![Forkers repo roster for @ldir92664/Vmess-Actions](https://reporoster.com/forks/ldir92664/Vmess-Actions)](https://github.com/ldir92664/Vmess-Actions/network/members)
