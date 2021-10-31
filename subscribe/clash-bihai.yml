@@ -5,109 +5,101 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _644 |153.44Mb, server: 104.17.251.27, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: calm-snow-beb3.6663901.workers.dev}, udp: true}
-  - {name: GB_4624 |64.82Mb, server: 46.101.28.98, port: 12222, type: vmess, uuid: 6ae2e994-2018-4f9f-a5bb-4639c14ba05f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 46.101.28.98}}
-  - {name: GB_4625 |57.38Mb, server: ukdll.52jjyun.top, port: 80, type: vmess, uuid: 17bf25e4-c944-4c1a-8a29-3f72f1d75d8f, alterId: 10, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jjyun, ws-headers: {Host: ukdll.52jjyun.top}}
-  - {name: CA_2082 |219.97Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE_3226 |46.57Mb, server: 139.59.209.152, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE_3229 |51.00Mb, server: 5.183.179.138, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE_3223 |49.98Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇩🇪 DE_3224 |48.53Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: _644 |165.32Mb, server: 104.17.251.27, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: calm-snow-beb3.6663901.workers.dev}, udp: true}
+  - {name: GB_4587 |64.82Mb, server: 46.101.28.98, port: 12222, type: vmess, uuid: 6ae2e994-2018-4f9f-a5bb-4639c14ba05f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 46.101.28.98}}
+  - {name: GB_4588 |57.38Mb, server: ukdll.52jjyun.top, port: 80, type: vmess, uuid: 17bf25e4-c944-4c1a-8a29-3f72f1d75d8f, alterId: 10, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jjyun, ws-headers: {Host: ukdll.52jjyun.top}}
+  - {name: CA_2071 |219.97Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_3213 |46.57Mb, server: 139.59.209.152, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_3214 |51.00Mb, server: 5.183.179.138, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_3212 |48.53Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _644 |153.44Mb
-      - GB_4624 |64.82Mb
-      - GB_4625 |57.38Mb
-      - CA_2082 |219.97Mb
-      - 🇩🇪 DE_3226 |46.57Mb
-      - 🇩🇪 DE_3229 |51.00Mb
-      - 🇩🇪 DE_3223 |49.98Mb
-      - 🇩🇪 DE_3224 |48.53Mb
+      - _644 |165.32Mb
+      - GB_4587 |64.82Mb
+      - GB_4588 |57.38Mb
+      - CA_2071 |219.97Mb
+      - 🇩🇪 DE_3213 |46.57Mb
+      - 🇩🇪 DE_3214 |51.00Mb
+      - 🇩🇪 DE_3212 |48.53Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _644 |153.44Mb
-      - GB_4624 |64.82Mb
-      - GB_4625 |57.38Mb
-      - CA_2082 |219.97Mb
-      - 🇩🇪 DE_3226 |46.57Mb
-      - 🇩🇪 DE_3229 |51.00Mb
-      - 🇩🇪 DE_3223 |49.98Mb
-      - 🇩🇪 DE_3224 |48.53Mb
+      - _644 |165.32Mb
+      - GB_4587 |64.82Mb
+      - GB_4588 |57.38Mb
+      - CA_2071 |219.97Mb
+      - 🇩🇪 DE_3213 |46.57Mb
+      - 🇩🇪 DE_3214 |51.00Mb
+      - 🇩🇪 DE_3212 |48.53Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _644 |153.44Mb
-      - GB_4624 |64.82Mb
-      - GB_4625 |57.38Mb
-      - CA_2082 |219.97Mb
-      - 🇩🇪 DE_3226 |46.57Mb
-      - 🇩🇪 DE_3229 |51.00Mb
-      - 🇩🇪 DE_3223 |49.98Mb
-      - 🇩🇪 DE_3224 |48.53Mb
+      - _644 |165.32Mb
+      - GB_4587 |64.82Mb
+      - GB_4588 |57.38Mb
+      - CA_2071 |219.97Mb
+      - 🇩🇪 DE_3213 |46.57Mb
+      - 🇩🇪 DE_3214 |51.00Mb
+      - 🇩🇪 DE_3212 |48.53Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _644 |153.44Mb
-      - GB_4624 |64.82Mb
-      - GB_4625 |57.38Mb
-      - CA_2082 |219.97Mb
-      - 🇩🇪 DE_3226 |46.57Mb
-      - 🇩🇪 DE_3229 |51.00Mb
-      - 🇩🇪 DE_3223 |49.98Mb
-      - 🇩🇪 DE_3224 |48.53Mb
+      - _644 |165.32Mb
+      - GB_4587 |64.82Mb
+      - GB_4588 |57.38Mb
+      - CA_2071 |219.97Mb
+      - 🇩🇪 DE_3213 |46.57Mb
+      - 🇩🇪 DE_3214 |51.00Mb
+      - 🇩🇪 DE_3212 |48.53Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _644 |153.44Mb
-      - GB_4624 |64.82Mb
-      - GB_4625 |57.38Mb
-      - CA_2082 |219.97Mb
-      - 🇩🇪 DE_3226 |46.57Mb
-      - 🇩🇪 DE_3229 |51.00Mb
-      - 🇩🇪 DE_3223 |49.98Mb
-      - 🇩🇪 DE_3224 |48.53Mb
+      - _644 |165.32Mb
+      - GB_4587 |64.82Mb
+      - GB_4588 |57.38Mb
+      - CA_2071 |219.97Mb
+      - 🇩🇪 DE_3213 |46.57Mb
+      - 🇩🇪 DE_3214 |51.00Mb
+      - 🇩🇪 DE_3212 |48.53Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _644 |153.44Mb
-      - GB_4624 |64.82Mb
-      - GB_4625 |57.38Mb
-      - CA_2082 |219.97Mb
-      - 🇩🇪 DE_3226 |46.57Mb
-      - 🇩🇪 DE_3229 |51.00Mb
-      - 🇩🇪 DE_3223 |49.98Mb
-      - 🇩🇪 DE_3224 |48.53Mb
+      - _644 |165.32Mb
+      - GB_4587 |64.82Mb
+      - GB_4588 |57.38Mb
+      - CA_2071 |219.97Mb
+      - 🇩🇪 DE_3213 |46.57Mb
+      - 🇩🇪 DE_3214 |51.00Mb
+      - 🇩🇪 DE_3212 |48.53Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _644 |153.44Mb
-      - GB_4624 |64.82Mb
-      - GB_4625 |57.38Mb
-      - CA_2082 |219.97Mb
-      - 🇩🇪 DE_3226 |46.57Mb
-      - 🇩🇪 DE_3229 |51.00Mb
-      - 🇩🇪 DE_3223 |49.98Mb
-      - 🇩🇪 DE_3224 |48.53Mb
+      - _644 |165.32Mb
+      - GB_4587 |64.82Mb
+      - GB_4588 |57.38Mb
+      - CA_2071 |219.97Mb
+      - 🇩🇪 DE_3213 |46.57Mb
+      - 🇩🇪 DE_3214 |51.00Mb
+      - 🇩🇪 DE_3212 |48.53Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,14 +122,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _644 |153.44Mb
-      - GB_4624 |64.82Mb
-      - GB_4625 |57.38Mb
-      - CA_2082 |219.97Mb
-      - 🇩🇪 DE_3226 |46.57Mb
-      - 🇩🇪 DE_3229 |51.00Mb
-      - 🇩🇪 DE_3223 |49.98Mb
-      - 🇩🇪 DE_3224 |48.53Mb
+      - _644 |165.32Mb
+      - GB_4587 |64.82Mb
+      - GB_4588 |57.38Mb
+      - CA_2071 |219.97Mb
+      - 🇩🇪 DE_3213 |46.57Mb
+      - 🇩🇪 DE_3214 |51.00Mb
+      - 🇩🇪 DE_3212 |48.53Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
