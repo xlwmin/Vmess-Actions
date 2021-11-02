@@ -5,77 +5,109 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _616 |200.19Mb, server: 104.17.251.27, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: calm-snow-beb3.6663901.workers.dev}, udp: true}
-  - {name: GB_4404 |65.58Mb, server: 46.101.28.98, port: 12222, type: vmess, uuid: 6ae2e994-2018-4f9f-a5bb-4639c14ba05f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 46.101.28.98}}
-  - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: _616 |285.16Mb, server: 104.17.251.27, port: 443, type: vmess, uuid: ad806487-2d26-4636-98b6-ab85cc8521f7, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /, ws-headers: {Host: calm-snow-beb3.6663901.workers.dev}, udp: true}
+  - {name: 🇦🇺 AU_1233 |31.67Mb, server: 1.1.1.100, port: 443, type: vmess, uuid: 4f672ab6-25e3-49e8-951a-d87b1fa75467, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ce04/, ws-headers: {Host: 1.1.1.100}}
+  - {name: GB_4388 |64.57Mb, server: 46.101.28.98, port: 12222, type: vmess, uuid: 6ae2e994-2018-4f9f-a5bb-4639c14ba05f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 46.101.28.98}}
+  - {name: IL_4948 |37.10Mb, server: 212.80.205.133, port: 31262, type: vmess, uuid: 00415a68-d5eb-4573-b73e-2b21f6b45c5d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇩🇪 DE_3008 |52.24Mb, server: 139.59.209.152, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_3010 |50.46Mb, server: 5.183.179.138, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_3006 |47.69Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: 🇩🇪 DE_3007 |49.54Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _616 |200.19Mb
-      - GB_4404 |65.58Mb
-      - "NULL"
-      - NULL 2
+      - _616 |285.16Mb
+      - 🇦🇺 AU_1233 |31.67Mb
+      - GB_4388 |64.57Mb
+      - IL_4948 |37.10Mb
+      - 🇩🇪 DE_3008 |52.24Mb
+      - 🇩🇪 DE_3010 |50.46Mb
+      - 🇩🇪 DE_3006 |47.69Mb
+      - 🇩🇪 DE_3007 |49.54Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _616 |200.19Mb
-      - GB_4404 |65.58Mb
-      - "NULL"
-      - NULL 2
+      - _616 |285.16Mb
+      - 🇦🇺 AU_1233 |31.67Mb
+      - GB_4388 |64.57Mb
+      - IL_4948 |37.10Mb
+      - 🇩🇪 DE_3008 |52.24Mb
+      - 🇩🇪 DE_3010 |50.46Mb
+      - 🇩🇪 DE_3006 |47.69Mb
+      - 🇩🇪 DE_3007 |49.54Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _616 |200.19Mb
-      - GB_4404 |65.58Mb
-      - "NULL"
-      - NULL 2
+      - _616 |285.16Mb
+      - 🇦🇺 AU_1233 |31.67Mb
+      - GB_4388 |64.57Mb
+      - IL_4948 |37.10Mb
+      - 🇩🇪 DE_3008 |52.24Mb
+      - 🇩🇪 DE_3010 |50.46Mb
+      - 🇩🇪 DE_3006 |47.69Mb
+      - 🇩🇪 DE_3007 |49.54Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _616 |200.19Mb
-      - GB_4404 |65.58Mb
-      - "NULL"
-      - NULL 2
+      - _616 |285.16Mb
+      - 🇦🇺 AU_1233 |31.67Mb
+      - GB_4388 |64.57Mb
+      - IL_4948 |37.10Mb
+      - 🇩🇪 DE_3008 |52.24Mb
+      - 🇩🇪 DE_3010 |50.46Mb
+      - 🇩🇪 DE_3006 |47.69Mb
+      - 🇩🇪 DE_3007 |49.54Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _616 |200.19Mb
-      - GB_4404 |65.58Mb
-      - "NULL"
-      - NULL 2
+      - _616 |285.16Mb
+      - 🇦🇺 AU_1233 |31.67Mb
+      - GB_4388 |64.57Mb
+      - IL_4948 |37.10Mb
+      - 🇩🇪 DE_3008 |52.24Mb
+      - 🇩🇪 DE_3010 |50.46Mb
+      - 🇩🇪 DE_3006 |47.69Mb
+      - 🇩🇪 DE_3007 |49.54Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _616 |200.19Mb
-      - GB_4404 |65.58Mb
-      - "NULL"
-      - NULL 2
+      - _616 |285.16Mb
+      - 🇦🇺 AU_1233 |31.67Mb
+      - GB_4388 |64.57Mb
+      - IL_4948 |37.10Mb
+      - 🇩🇪 DE_3008 |52.24Mb
+      - 🇩🇪 DE_3010 |50.46Mb
+      - 🇩🇪 DE_3006 |47.69Mb
+      - 🇩🇪 DE_3007 |49.54Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _616 |200.19Mb
-      - GB_4404 |65.58Mb
-      - "NULL"
-      - NULL 2
+      - _616 |285.16Mb
+      - 🇦🇺 AU_1233 |31.67Mb
+      - GB_4388 |64.57Mb
+      - IL_4948 |37.10Mb
+      - 🇩🇪 DE_3008 |52.24Mb
+      - 🇩🇪 DE_3010 |50.46Mb
+      - 🇩🇪 DE_3006 |47.69Mb
+      - 🇩🇪 DE_3007 |49.54Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -98,10 +130,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _616 |200.19Mb
-      - GB_4404 |65.58Mb
-      - "NULL"
-      - NULL 2
+      - _616 |285.16Mb
+      - 🇦🇺 AU_1233 |31.67Mb
+      - GB_4388 |64.57Mb
+      - IL_4948 |37.10Mb
+      - 🇩🇪 DE_3008 |52.24Mb
+      - 🇩🇪 DE_3010 |50.46Mb
+      - 🇩🇪 DE_3006 |47.69Mb
+      - 🇩🇪 DE_3007 |49.54Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
