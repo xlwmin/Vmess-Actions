@@ -5,93 +5,133 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _569 |76.18Mb, server: usa.oracleusa.ml, port: 65367, type: vmess, uuid: ae888f86-b8e7-461b-9ea5-fe3f3d0d1bab, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: usa.oracleusa.ml}, udp: true}
-  - {name: GB_4146 |64.65Mb, server: 46.101.28.98, port: 12222, type: vmess, uuid: 6ae2e994-2018-4f9f-a5bb-4639c14ba05f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 46.101.28.98}}
-  - {name: 🇯🇵 JP_5740 |40.32Mb, server: usa3-node.3366test.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8633, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: usa3-node.3366test.com}}
-  - {name: _581 |31.66Mb, server: t4.ssrsub.com, port: 833, type: trojan, password: 8962d993-c7ff-4768-9dce-e2e8273f73dc, sni: t4.ssrsub.com, udp: true}
-  - {name: CA_1859 |207.90Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: _584 |76.18Mb, server: usa.oracleusa.ml, port: 65367, type: vmess, uuid: ae888f86-b8e7-461b-9ea5-fe3f3d0d1bab, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: usa.oracleusa.ml}, udp: true}
+  - {name: GB_4238 |64.65Mb, server: 46.101.28.98, port: 12222, type: vmess, uuid: 6ae2e994-2018-4f9f-a5bb-4639c14ba05f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 46.101.28.98}}
+  - {name: IL_4733 |38.82Mb, server: 212.80.205.133, port: 31262, type: vmess, uuid: 00415a68-d5eb-4573-b73e-2b21f6b45c5d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇯🇵 JP_5880 |50.75Mb, server: usa3-node.3366test.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8633, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: usa3-node.3366test.com}}
+  - {name: _589 |31.66Mb, server: t4.ssrsub.com, port: 833, type: trojan, password: 8962d993-c7ff-4768-9dce-e2e8273f73dc, sni: t4.ssrsub.com, udp: true}
+  - {name: CA_1940 |207.90Mb, server: 138.197.162.114, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_2934 |53.57Mb, server: 139.59.209.152, port: 4443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_2936 |50.16Mb, server: 5.183.179.138, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: GB_4246 |65.58Mb, server: 138.68.179.78, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_2932 |50.61Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: 🇩🇪 DE_2933 |50.64Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _569 |76.18Mb
-      - GB_4146 |64.65Mb
-      - 🇯🇵 JP_5740 |40.32Mb
-      - _581 |31.66Mb
-      - CA_1859 |207.90Mb
-      - "NULL"
+      - _584 |76.18Mb
+      - GB_4238 |64.65Mb
+      - IL_4733 |38.82Mb
+      - 🇯🇵 JP_5880 |50.75Mb
+      - _589 |31.66Mb
+      - CA_1940 |207.90Mb
+      - 🇩🇪 DE_2934 |53.57Mb
+      - 🇩🇪 DE_2936 |50.16Mb
+      - GB_4246 |65.58Mb
+      - 🇩🇪 DE_2932 |50.61Mb
+      - 🇩🇪 DE_2933 |50.64Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _569 |76.18Mb
-      - GB_4146 |64.65Mb
-      - 🇯🇵 JP_5740 |40.32Mb
-      - _581 |31.66Mb
-      - CA_1859 |207.90Mb
-      - "NULL"
+      - _584 |76.18Mb
+      - GB_4238 |64.65Mb
+      - IL_4733 |38.82Mb
+      - 🇯🇵 JP_5880 |50.75Mb
+      - _589 |31.66Mb
+      - CA_1940 |207.90Mb
+      - 🇩🇪 DE_2934 |53.57Mb
+      - 🇩🇪 DE_2936 |50.16Mb
+      - GB_4246 |65.58Mb
+      - 🇩🇪 DE_2932 |50.61Mb
+      - 🇩🇪 DE_2933 |50.64Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _569 |76.18Mb
-      - GB_4146 |64.65Mb
-      - 🇯🇵 JP_5740 |40.32Mb
-      - _581 |31.66Mb
-      - CA_1859 |207.90Mb
-      - "NULL"
+      - _584 |76.18Mb
+      - GB_4238 |64.65Mb
+      - IL_4733 |38.82Mb
+      - 🇯🇵 JP_5880 |50.75Mb
+      - _589 |31.66Mb
+      - CA_1940 |207.90Mb
+      - 🇩🇪 DE_2934 |53.57Mb
+      - 🇩🇪 DE_2936 |50.16Mb
+      - GB_4246 |65.58Mb
+      - 🇩🇪 DE_2932 |50.61Mb
+      - 🇩🇪 DE_2933 |50.64Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _569 |76.18Mb
-      - GB_4146 |64.65Mb
-      - 🇯🇵 JP_5740 |40.32Mb
-      - _581 |31.66Mb
-      - CA_1859 |207.90Mb
-      - "NULL"
+      - _584 |76.18Mb
+      - GB_4238 |64.65Mb
+      - IL_4733 |38.82Mb
+      - 🇯🇵 JP_5880 |50.75Mb
+      - _589 |31.66Mb
+      - CA_1940 |207.90Mb
+      - 🇩🇪 DE_2934 |53.57Mb
+      - 🇩🇪 DE_2936 |50.16Mb
+      - GB_4246 |65.58Mb
+      - 🇩🇪 DE_2932 |50.61Mb
+      - 🇩🇪 DE_2933 |50.64Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _569 |76.18Mb
-      - GB_4146 |64.65Mb
-      - 🇯🇵 JP_5740 |40.32Mb
-      - _581 |31.66Mb
-      - CA_1859 |207.90Mb
-      - "NULL"
+      - _584 |76.18Mb
+      - GB_4238 |64.65Mb
+      - IL_4733 |38.82Mb
+      - 🇯🇵 JP_5880 |50.75Mb
+      - _589 |31.66Mb
+      - CA_1940 |207.90Mb
+      - 🇩🇪 DE_2934 |53.57Mb
+      - 🇩🇪 DE_2936 |50.16Mb
+      - GB_4246 |65.58Mb
+      - 🇩🇪 DE_2932 |50.61Mb
+      - 🇩🇪 DE_2933 |50.64Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _569 |76.18Mb
-      - GB_4146 |64.65Mb
-      - 🇯🇵 JP_5740 |40.32Mb
-      - _581 |31.66Mb
-      - CA_1859 |207.90Mb
-      - "NULL"
+      - _584 |76.18Mb
+      - GB_4238 |64.65Mb
+      - IL_4733 |38.82Mb
+      - 🇯🇵 JP_5880 |50.75Mb
+      - _589 |31.66Mb
+      - CA_1940 |207.90Mb
+      - 🇩🇪 DE_2934 |53.57Mb
+      - 🇩🇪 DE_2936 |50.16Mb
+      - GB_4246 |65.58Mb
+      - 🇩🇪 DE_2932 |50.61Mb
+      - 🇩🇪 DE_2933 |50.64Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _569 |76.18Mb
-      - GB_4146 |64.65Mb
-      - 🇯🇵 JP_5740 |40.32Mb
-      - _581 |31.66Mb
-      - CA_1859 |207.90Mb
-      - "NULL"
+      - _584 |76.18Mb
+      - GB_4238 |64.65Mb
+      - IL_4733 |38.82Mb
+      - 🇯🇵 JP_5880 |50.75Mb
+      - _589 |31.66Mb
+      - CA_1940 |207.90Mb
+      - 🇩🇪 DE_2934 |53.57Mb
+      - 🇩🇪 DE_2936 |50.16Mb
+      - GB_4246 |65.58Mb
+      - 🇩🇪 DE_2932 |50.61Mb
+      - 🇩🇪 DE_2933 |50.64Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -114,12 +154,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _569 |76.18Mb
-      - GB_4146 |64.65Mb
-      - 🇯🇵 JP_5740 |40.32Mb
-      - _581 |31.66Mb
-      - CA_1859 |207.90Mb
-      - "NULL"
+      - _584 |76.18Mb
+      - GB_4238 |64.65Mb
+      - IL_4733 |38.82Mb
+      - 🇯🇵 JP_5880 |50.75Mb
+      - _589 |31.66Mb
+      - CA_1940 |207.90Mb
+      - 🇩🇪 DE_2934 |53.57Mb
+      - 🇩🇪 DE_2936 |50.16Mb
+      - GB_4246 |65.58Mb
+      - 🇩🇪 DE_2932 |50.61Mb
+      - 🇩🇪 DE_2933 |50.64Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
