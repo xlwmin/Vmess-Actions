@@ -5,69 +5,101 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _572 |62.59Mb, server: v2.ssrsub.com, port: 166, type: vmess, uuid: d8aacec8-e256-427b-a927-0c6013f6595b, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v2.ssrsub.com}, udp: true}
-  - {name: 🇩🇪 DE_2892 |48.14Mb, server: 5.183.179.138, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE_2891 |46.38Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: _570 |62.59Mb, server: v2.ssrsub.com, port: 166, type: vmess, uuid: d8aacec8-e256-427b-a927-0c6013f6595b, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v2.ssrsub.com}, udp: true}
+  - {name: GB_4198 |62.72Mb, server: 46.101.28.98, port: 12222, type: vmess, uuid: 6ae2e994-2018-4f9f-a5bb-4639c14ba05f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 46.101.28.98}}
+  - {name: IL_4693 |33.12Mb, server: 212.80.205.133, port: 31262, type: vmess, uuid: 00415a68-d5eb-4573-b73e-2b21f6b45c5d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: IR_5015 |59.98Mb, server: 185.148.13.27, port: 29497, type: vmess, uuid: ec2c1917-c52b-48fb-9664-e91861d13990, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 185.148.13.27}}
+  - {name: 🇩🇪 DE_2886 |48.14Mb, server: 5.183.179.138, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_2883 |48.77Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: 🇩🇪 DE_2884 |46.38Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _572 |62.59Mb
-      - 🇩🇪 DE_2892 |48.14Mb
-      - 🇩🇪 DE_2891 |46.38Mb
+      - _570 |62.59Mb
+      - GB_4198 |62.72Mb
+      - IL_4693 |33.12Mb
+      - IR_5015 |59.98Mb
+      - 🇩🇪 DE_2886 |48.14Mb
+      - 🇩🇪 DE_2883 |48.77Mb
+      - 🇩🇪 DE_2884 |46.38Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _572 |62.59Mb
-      - 🇩🇪 DE_2892 |48.14Mb
-      - 🇩🇪 DE_2891 |46.38Mb
+      - _570 |62.59Mb
+      - GB_4198 |62.72Mb
+      - IL_4693 |33.12Mb
+      - IR_5015 |59.98Mb
+      - 🇩🇪 DE_2886 |48.14Mb
+      - 🇩🇪 DE_2883 |48.77Mb
+      - 🇩🇪 DE_2884 |46.38Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _572 |62.59Mb
-      - 🇩🇪 DE_2892 |48.14Mb
-      - 🇩🇪 DE_2891 |46.38Mb
+      - _570 |62.59Mb
+      - GB_4198 |62.72Mb
+      - IL_4693 |33.12Mb
+      - IR_5015 |59.98Mb
+      - 🇩🇪 DE_2886 |48.14Mb
+      - 🇩🇪 DE_2883 |48.77Mb
+      - 🇩🇪 DE_2884 |46.38Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _572 |62.59Mb
-      - 🇩🇪 DE_2892 |48.14Mb
-      - 🇩🇪 DE_2891 |46.38Mb
+      - _570 |62.59Mb
+      - GB_4198 |62.72Mb
+      - IL_4693 |33.12Mb
+      - IR_5015 |59.98Mb
+      - 🇩🇪 DE_2886 |48.14Mb
+      - 🇩🇪 DE_2883 |48.77Mb
+      - 🇩🇪 DE_2884 |46.38Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _572 |62.59Mb
-      - 🇩🇪 DE_2892 |48.14Mb
-      - 🇩🇪 DE_2891 |46.38Mb
+      - _570 |62.59Mb
+      - GB_4198 |62.72Mb
+      - IL_4693 |33.12Mb
+      - IR_5015 |59.98Mb
+      - 🇩🇪 DE_2886 |48.14Mb
+      - 🇩🇪 DE_2883 |48.77Mb
+      - 🇩🇪 DE_2884 |46.38Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _572 |62.59Mb
-      - 🇩🇪 DE_2892 |48.14Mb
-      - 🇩🇪 DE_2891 |46.38Mb
+      - _570 |62.59Mb
+      - GB_4198 |62.72Mb
+      - IL_4693 |33.12Mb
+      - IR_5015 |59.98Mb
+      - 🇩🇪 DE_2886 |48.14Mb
+      - 🇩🇪 DE_2883 |48.77Mb
+      - 🇩🇪 DE_2884 |46.38Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _572 |62.59Mb
-      - 🇩🇪 DE_2892 |48.14Mb
-      - 🇩🇪 DE_2891 |46.38Mb
+      - _570 |62.59Mb
+      - GB_4198 |62.72Mb
+      - IL_4693 |33.12Mb
+      - IR_5015 |59.98Mb
+      - 🇩🇪 DE_2886 |48.14Mb
+      - 🇩🇪 DE_2883 |48.77Mb
+      - 🇩🇪 DE_2884 |46.38Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,9 +122,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _572 |62.59Mb
-      - 🇩🇪 DE_2892 |48.14Mb
-      - 🇩🇪 DE_2891 |46.38Mb
+      - _570 |62.59Mb
+      - GB_4198 |62.72Mb
+      - IL_4693 |33.12Mb
+      - IR_5015 |59.98Mb
+      - 🇩🇪 DE_2886 |48.14Mb
+      - 🇩🇪 DE_2883 |48.77Mb
+      - 🇩🇪 DE_2884 |46.38Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
