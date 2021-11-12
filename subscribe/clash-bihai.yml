@@ -5,77 +5,133 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _550 |30.17Mb, server: antigfwjp.tk, port: 443, type: vmess, uuid: fb294abd-d3cc-4504-8d40-866b7622ce59, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /114514, ws-headers: {Host: antigfwjp.tk}, udp: true}
-  - {name: _556 |33.53Mb, server: t2.ssrsub.com, port: 833, type: trojan, password: 8962d993-c7ff-4768-9dce-e2e8273f73dc, sni: t2.ssrsub.com, udp: true}
-  - {name: 🇩🇪 DE_2593 |47.05Mb, server: 5.183.179.138, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE_2591 |38.24Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: _540 |30.17Mb, server: antigfwjp.tk, port: 443, type: vmess, uuid: fb294abd-d3cc-4504-8d40-866b7622ce59, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /114514, ws-headers: {Host: antigfwjp.tk}, udp: true}
+  - {name: 🇳🇱 NL_5798 |57.73Mb, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_5800 |58.08Mb, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_5801 |57.80Mb, server: 89.31.127.151, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_5802 |57.87Mb, server: 89.31.127.151, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_5803 |53.21Mb, server: 185.171.120.144, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_5804 |58.23Mb, server: 89.31.127.151, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_5805 |52.85Mb, server: 185.171.120.144, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: 🇳🇱 NL_5806 |54.36Mb, server: 185.171.120.144, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_2579 |34.76Mb, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: 🇩🇪 DE_2580 |38.24Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _550 |30.17Mb
-      - _556 |33.53Mb
-      - 🇩🇪 DE_2593 |47.05Mb
-      - 🇩🇪 DE_2591 |38.24Mb
+      - _540 |30.17Mb
+      - 🇳🇱 NL_5798 |57.73Mb
+      - 🇳🇱 NL_5800 |58.08Mb
+      - 🇳🇱 NL_5801 |57.80Mb
+      - 🇳🇱 NL_5802 |57.87Mb
+      - 🇳🇱 NL_5803 |53.21Mb
+      - 🇳🇱 NL_5804 |58.23Mb
+      - 🇳🇱 NL_5805 |52.85Mb
+      - 🇳🇱 NL_5806 |54.36Mb
+      - 🇩🇪 DE_2579 |34.76Mb
+      - 🇩🇪 DE_2580 |38.24Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _550 |30.17Mb
-      - _556 |33.53Mb
-      - 🇩🇪 DE_2593 |47.05Mb
-      - 🇩🇪 DE_2591 |38.24Mb
+      - _540 |30.17Mb
+      - 🇳🇱 NL_5798 |57.73Mb
+      - 🇳🇱 NL_5800 |58.08Mb
+      - 🇳🇱 NL_5801 |57.80Mb
+      - 🇳🇱 NL_5802 |57.87Mb
+      - 🇳🇱 NL_5803 |53.21Mb
+      - 🇳🇱 NL_5804 |58.23Mb
+      - 🇳🇱 NL_5805 |52.85Mb
+      - 🇳🇱 NL_5806 |54.36Mb
+      - 🇩🇪 DE_2579 |34.76Mb
+      - 🇩🇪 DE_2580 |38.24Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _550 |30.17Mb
-      - _556 |33.53Mb
-      - 🇩🇪 DE_2593 |47.05Mb
-      - 🇩🇪 DE_2591 |38.24Mb
+      - _540 |30.17Mb
+      - 🇳🇱 NL_5798 |57.73Mb
+      - 🇳🇱 NL_5800 |58.08Mb
+      - 🇳🇱 NL_5801 |57.80Mb
+      - 🇳🇱 NL_5802 |57.87Mb
+      - 🇳🇱 NL_5803 |53.21Mb
+      - 🇳🇱 NL_5804 |58.23Mb
+      - 🇳🇱 NL_5805 |52.85Mb
+      - 🇳🇱 NL_5806 |54.36Mb
+      - 🇩🇪 DE_2579 |34.76Mb
+      - 🇩🇪 DE_2580 |38.24Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _550 |30.17Mb
-      - _556 |33.53Mb
-      - 🇩🇪 DE_2593 |47.05Mb
-      - 🇩🇪 DE_2591 |38.24Mb
+      - _540 |30.17Mb
+      - 🇳🇱 NL_5798 |57.73Mb
+      - 🇳🇱 NL_5800 |58.08Mb
+      - 🇳🇱 NL_5801 |57.80Mb
+      - 🇳🇱 NL_5802 |57.87Mb
+      - 🇳🇱 NL_5803 |53.21Mb
+      - 🇳🇱 NL_5804 |58.23Mb
+      - 🇳🇱 NL_5805 |52.85Mb
+      - 🇳🇱 NL_5806 |54.36Mb
+      - 🇩🇪 DE_2579 |34.76Mb
+      - 🇩🇪 DE_2580 |38.24Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _550 |30.17Mb
-      - _556 |33.53Mb
-      - 🇩🇪 DE_2593 |47.05Mb
-      - 🇩🇪 DE_2591 |38.24Mb
+      - _540 |30.17Mb
+      - 🇳🇱 NL_5798 |57.73Mb
+      - 🇳🇱 NL_5800 |58.08Mb
+      - 🇳🇱 NL_5801 |57.80Mb
+      - 🇳🇱 NL_5802 |57.87Mb
+      - 🇳🇱 NL_5803 |53.21Mb
+      - 🇳🇱 NL_5804 |58.23Mb
+      - 🇳🇱 NL_5805 |52.85Mb
+      - 🇳🇱 NL_5806 |54.36Mb
+      - 🇩🇪 DE_2579 |34.76Mb
+      - 🇩🇪 DE_2580 |38.24Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _550 |30.17Mb
-      - _556 |33.53Mb
-      - 🇩🇪 DE_2593 |47.05Mb
-      - 🇩🇪 DE_2591 |38.24Mb
+      - _540 |30.17Mb
+      - 🇳🇱 NL_5798 |57.73Mb
+      - 🇳🇱 NL_5800 |58.08Mb
+      - 🇳🇱 NL_5801 |57.80Mb
+      - 🇳🇱 NL_5802 |57.87Mb
+      - 🇳🇱 NL_5803 |53.21Mb
+      - 🇳🇱 NL_5804 |58.23Mb
+      - 🇳🇱 NL_5805 |52.85Mb
+      - 🇳🇱 NL_5806 |54.36Mb
+      - 🇩🇪 DE_2579 |34.76Mb
+      - 🇩🇪 DE_2580 |38.24Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _550 |30.17Mb
-      - _556 |33.53Mb
-      - 🇩🇪 DE_2593 |47.05Mb
-      - 🇩🇪 DE_2591 |38.24Mb
+      - _540 |30.17Mb
+      - 🇳🇱 NL_5798 |57.73Mb
+      - 🇳🇱 NL_5800 |58.08Mb
+      - 🇳🇱 NL_5801 |57.80Mb
+      - 🇳🇱 NL_5802 |57.87Mb
+      - 🇳🇱 NL_5803 |53.21Mb
+      - 🇳🇱 NL_5804 |58.23Mb
+      - 🇳🇱 NL_5805 |52.85Mb
+      - 🇳🇱 NL_5806 |54.36Mb
+      - 🇩🇪 DE_2579 |34.76Mb
+      - 🇩🇪 DE_2580 |38.24Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -98,10 +154,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _550 |30.17Mb
-      - _556 |33.53Mb
-      - 🇩🇪 DE_2593 |47.05Mb
-      - 🇩🇪 DE_2591 |38.24Mb
+      - _540 |30.17Mb
+      - 🇳🇱 NL_5798 |57.73Mb
+      - 🇳🇱 NL_5800 |58.08Mb
+      - 🇳🇱 NL_5801 |57.80Mb
+      - 🇳🇱 NL_5802 |57.87Mb
+      - 🇳🇱 NL_5803 |53.21Mb
+      - 🇳🇱 NL_5804 |58.23Mb
+      - 🇳🇱 NL_5805 |52.85Mb
+      - 🇳🇱 NL_5806 |54.36Mb
+      - 🇩🇪 DE_2579 |34.76Mb
+      - 🇩🇪 DE_2580 |38.24Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
