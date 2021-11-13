@@ -5,69 +5,69 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 3, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: HU_4465 |35.49Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: 🇩🇪 DE_2896 |49.93Mb, server: 5.183.179.138, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: 🇩🇪 DE_2895 |44.14Mb, server: 136.243.191.88, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - HU_4465 |35.49Mb
+      - 🇩🇪 DE_2896 |49.93Mb
+      - 🇩🇪 DE_2895 |44.14Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - HU_4465 |35.49Mb
+      - 🇩🇪 DE_2896 |49.93Mb
+      - 🇩🇪 DE_2895 |44.14Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - HU_4465 |35.49Mb
+      - 🇩🇪 DE_2896 |49.93Mb
+      - 🇩🇪 DE_2895 |44.14Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - HU_4465 |35.49Mb
+      - 🇩🇪 DE_2896 |49.93Mb
+      - 🇩🇪 DE_2895 |44.14Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - HU_4465 |35.49Mb
+      - 🇩🇪 DE_2896 |49.93Mb
+      - 🇩🇪 DE_2895 |44.14Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - HU_4465 |35.49Mb
+      - 🇩🇪 DE_2896 |49.93Mb
+      - 🇩🇪 DE_2895 |44.14Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - HU_4465 |35.49Mb
+      - 🇩🇪 DE_2896 |49.93Mb
+      - 🇩🇪 DE_2895 |44.14Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,9 +90,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - HU_4465 |35.49Mb
+      - 🇩🇪 DE_2896 |49.93Mb
+      - 🇩🇪 DE_2895 |44.14Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
