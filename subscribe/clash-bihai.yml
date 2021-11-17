@@ -5,8 +5,9 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _493 |32.07Mb, server: v4.ssrsub.com, port: 168, type: vmess, uuid: e54a480c-77e3-41ca-8f8b-17ffb50dbd08, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v4.ssrsub.com}, udp: true}
-  - {name: _503 |33.21Mb, server: t4.ssrsub.com, port: 1033, type: trojan, password: 92a95e6d-cf89-42ee-8110-66fab6871e2f, sni: t4.ssrsub.com, udp: true}
+  - {name: _508 |32.07Mb, server: v4.ssrsub.com, port: 168, type: vmess, uuid: e54a480c-77e3-41ca-8f8b-17ffb50dbd08, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v4.ssrsub.com}, udp: true}
+  - {name: CA_1719 |63.04Mb, server: 104.255.66.87, port: 38922, type: vmess, uuid: f3e846c1-d8e4-42df-86d4-f4e5028630d8, alterId: 8, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: _511 |33.21Mb, server: t4.ssrsub.com, port: 1033, type: trojan, password: 92a95e6d-cf89-42ee-8110-66fab6871e2f, sni: t4.ssrsub.com, udp: true}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
@@ -14,8 +15,9 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _493 |32.07Mb
-      - _503 |33.21Mb
+      - _508 |32.07Mb
+      - CA_1719 |63.04Mb
+      - _511 |33.21Mb
       - "NULL"
   - name: ♻️ 自动选择
     type: url-test
@@ -23,8 +25,9 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - _493 |32.07Mb
-      - _503 |33.21Mb
+      - _508 |32.07Mb
+      - CA_1719 |63.04Mb
+      - _511 |33.21Mb
       - "NULL"
   - name: 🌍 国外媒体
     type: select
@@ -32,32 +35,36 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _493 |32.07Mb
-      - _503 |33.21Mb
+      - _508 |32.07Mb
+      - CA_1719 |63.04Mb
+      - _511 |33.21Mb
       - "NULL"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _493 |32.07Mb
-      - _503 |33.21Mb
+      - _508 |32.07Mb
+      - CA_1719 |63.04Mb
+      - _511 |33.21Mb
       - "NULL"
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _493 |32.07Mb
-      - _503 |33.21Mb
+      - _508 |32.07Mb
+      - CA_1719 |63.04Mb
+      - _511 |33.21Mb
       - "NULL"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _493 |32.07Mb
-      - _503 |33.21Mb
+      - _508 |32.07Mb
+      - CA_1719 |63.04Mb
+      - _511 |33.21Mb
       - "NULL"
   - name: 📢 谷歌FCM
     type: select
@@ -65,8 +72,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _493 |32.07Mb
-      - _503 |33.21Mb
+      - _508 |32.07Mb
+      - CA_1719 |63.04Mb
+      - _511 |33.21Mb
       - "NULL"
   - name: 🎯 全球直连
     type: select
@@ -90,8 +98,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _493 |32.07Mb
-      - _503 |33.21Mb
+      - _508 |32.07Mb
+      - CA_1719 |63.04Mb
+      - _511 |33.21Mb
       - "NULL"
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
