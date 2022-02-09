@@ -5,68 +5,84 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: CA_294 |30.71Mb, server: 71.19.252.163, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 71.19.252.163}}}
+  - {name: CA_299 |41.71Mb, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 192.186.129.66}}}
+  - {name: CA_301 |57.43Mb, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-buffalo.lvuft.com}}}
+  - {name: _41 |36.91Mb, server: t4.ssrsub.com, port: 8443, type: trojan, password: 916251fa-6aa5-459d-b7a1-968b49a01e4e, sni: t4.ssrsub.com, skip-cert-verify: true, udp: true}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 3, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - CA_294 |30.71Mb
+      - CA_299 |41.71Mb
+      - CA_301 |57.43Mb
+      - _41 |36.91Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - CA_294 |30.71Mb
+      - CA_299 |41.71Mb
+      - CA_301 |57.43Mb
+      - _41 |36.91Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CA_294 |30.71Mb
+      - CA_299 |41.71Mb
+      - CA_301 |57.43Mb
+      - _41 |36.91Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - CA_294 |30.71Mb
+      - CA_299 |41.71Mb
+      - CA_301 |57.43Mb
+      - _41 |36.91Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - CA_294 |30.71Mb
+      - CA_299 |41.71Mb
+      - CA_301 |57.43Mb
+      - _41 |36.91Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - CA_294 |30.71Mb
+      - CA_299 |41.71Mb
+      - CA_301 |57.43Mb
+      - _41 |36.91Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CA_294 |30.71Mb
+      - CA_299 |41.71Mb
+      - CA_301 |57.43Mb
+      - _41 |36.91Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -89,9 +105,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CA_294 |30.71Mb
+      - CA_299 |41.71Mb
+      - CA_301 |57.43Mb
+      - _41 |36.91Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
