@@ -5,212 +5,292 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CA_356 |142.05Mb, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-buffalo.lvuft.com}}}
-  - {name: CA_358 |93.06Mb, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 192.186.129.66}}}
-  - {name: DE_507 |71.19Mb, server: 92.223.30.132, port: 443, type: vmess, uuid: 23779c35-e8e0-49e6-a681-e1fe3f5c673c, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /0DGCTPQ, headers: {Host: 92.223.30.132}}}
-  - {name: DE_508 |57.73Mb, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 194.195.240.132}}}
-  - {name: DE_509 |60.75Mb, server: 78.46.244.34, port: 33655, type: vmess, uuid: b41303b4-e2c8-4771-cb6c-ef62244a7621, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: DE_510 |51.30Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
-  - {name: DE_511 |51.25Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: GB_686 |52.82Mb, server: italy-milan.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: italy-milan.mah3Hoet.com}}}
-  - {name: GB_687 |51.05Mb, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: uk-manchester.eiw2eemo.com}}}
+  - {name: CA_356 |64.49Mb, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-buffalo.lvuft.com}}}
+  - {name: CA_358 |104.47Mb, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 192.186.129.66}}}
+  - {name: DE_503 |71.19Mb, server: 92.223.30.132, port: 443, type: vmess, uuid: 23779c35-e8e0-49e6-a681-e1fe3f5c673c, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /0DGCTPQ, headers: {Host: 92.223.30.132}}}
+  - {name: DE_504 |57.73Mb, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 194.195.240.132}}}
+  - {name: DE_505 |60.75Mb, server: 78.46.244.34, port: 33655, type: vmess, uuid: b41303b4-e2c8-4771-cb6c-ef62244a7621, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: DE_506 |51.30Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.0.42.87}}}
+  - {name: DE_507 |51.25Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: GB_684 |65.63Mb, server: 45.91.83.111, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: ray, headers: {Host: 45.91.83.111}}}
+  - {name: GB_685 |51.23Mb, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.46.68}}}
+  - {name: GB_686 |47.38Mb, server: switzerland-zurich.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: switzerland-zurich.mah3Hoet.com}}}
+  - {name: GB_687 |52.82Mb, server: italy-milan.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: italy-milan.mah3Hoet.com}}}
+  - {name: GB_688 |51.05Mb, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: uk-manchester.eiw2eemo.com}}}
   - {name: GB_689 |52.35Mb, server: 146.70.73.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.73.2}}}
   - {name: GB_690 |49.64Mb, server: 146.70.71.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.71.2}}}
-  - {name: GB_691 |65.63Mb, server: 45.91.83.111, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: ray, headers: {Host: 45.91.83.111}}}
   - {name: GB_692 |78.01Mb, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: ray, headers: {Host: us1nhg-node.aiqiche123.com}}}
-  - {name: GB_693 |47.38Mb, server: switzerland-zurich.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: switzerland-zurich.mah3Hoet.com}}}
-  - {name: GB_694 |51.23Mb, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.46.68}}}
   - {name: HU_717 |43.86Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: AU_110 |82.57Mb, server: 185.212.62.19, port: 443, type: trojan, password: sxkKUbBydK, skip-cert-verify: true, udp: true}
-  - {name: GB_682 |56.06Mb, server: 45.91.83.226, port: 6349, type: ssr, cipher: rc4-md5, password: passinfo123, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: GB_683 |48.24Mb, server: 45.91.83.51, port: 8052, type: ssr, cipher: rc4-md5, password: passinfo123, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: GB_684 |77.19Mb, server: 45.91.83.228, port: 6463, type: ssr, cipher: rc4-md5, password: passinfo123, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: GB_685 |40.60Mb, server: 45.91.83.218, port: 8421, type: ssr, cipher: rc4-md5, password: passinfo123, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: JP_885 |30.37Mb, server: 160.16.115.151, port: 443, type: vmess, uuid: fb8ed8a9-ad61-4a12-90c6-55670a4a3332, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /neuromancer, headers: {Host: 160.16.115.151}}}
+  - {name: NL_921 |49.66Mb, server: 45.62.123.208, port: 47729, type: vmess, uuid: d9c827ee-063e-417e-e331-a589a7197578, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.62.123.208}}}
+  - {name: NL_922 |53.67Mb, server: 154.84.1.198, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/080331123005, headers: {Host: www.54872833.xyz}}}
+  - {name: RO_971 |58.49Mb, server: usa-lasvegas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-lasvegas.lvuft.com}}}
+  - {name: RO_972 |60.42Mb, server: 79.110.54.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 79.110.54.162}}}
+  - {name: US_1135 |33.81Mb, server: ericpoweron.pl.eu.org, port: 443, type: vmess, uuid: 43839f89-34d1-4144-8764-40c90c307058, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true}
+  - {name: IR_804 |46.82Mb, server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
+  - {name: US_1136 |31.24Mb, server: www.tokyo2023.ga, port: 443, type: trojan, password: 4f7dc540-d244-4e64-af21-4b5bb300add3, skip-cert-verify: true, udp: true}
+  - {name: US_1138 |71.20Mb, server: usugaki.ssss.monster, port: 443, type: trojan, password: DHQ7G8SC858VE245, skip-cert-verify: true, udp: true}
+  - {name: FR_633 |62.55Mb, server: fr-am1-1.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: GB_680 |56.06Mb, server: 45.91.83.226, port: 6349, type: ssr, cipher: rc4-md5, password: passinfo123, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: GB_681 |48.24Mb, server: 45.91.83.51, port: 8052, type: ssr, cipher: rc4-md5, password: passinfo123, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: GB_682 |77.19Mb, server: 45.91.83.228, port: 6463, type: ssr, cipher: rc4-md5, password: passinfo123, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: GB_683 |40.60Mb, server: 45.91.83.218, port: 8421, type: ssr, cipher: rc4-md5, password: passinfo123, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: JP_881 |32.97Mb, server: jp-am48-9.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: 3H2aN5Gnm, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CA_356 |142.05Mb
-      - CA_358 |93.06Mb
-      - DE_507 |71.19Mb
-      - DE_508 |57.73Mb
-      - DE_509 |60.75Mb
-      - DE_510 |51.30Mb
-      - DE_511 |51.25Mb
-      - GB_686 |52.82Mb
-      - GB_687 |51.05Mb
+      - CA_356 |64.49Mb
+      - CA_358 |104.47Mb
+      - DE_503 |71.19Mb
+      - DE_504 |57.73Mb
+      - DE_505 |60.75Mb
+      - DE_506 |51.30Mb
+      - DE_507 |51.25Mb
+      - GB_684 |65.63Mb
+      - GB_685 |51.23Mb
+      - GB_686 |47.38Mb
+      - GB_687 |52.82Mb
+      - GB_688 |51.05Mb
       - GB_689 |52.35Mb
       - GB_690 |49.64Mb
-      - GB_691 |65.63Mb
       - GB_692 |78.01Mb
-      - GB_693 |47.38Mb
-      - GB_694 |51.23Mb
       - HU_717 |43.86Mb
-      - AU_110 |82.57Mb
-      - GB_682 |56.06Mb
-      - GB_683 |48.24Mb
-      - GB_684 |77.19Mb
-      - GB_685 |40.60Mb
+      - JP_885 |30.37Mb
+      - NL_921 |49.66Mb
+      - NL_922 |53.67Mb
+      - RO_971 |58.49Mb
+      - RO_972 |60.42Mb
+      - US_1135 |33.81Mb
+      - IR_804 |46.82Mb
+      - US_1136 |31.24Mb
+      - US_1138 |71.20Mb
+      - FR_633 |62.55Mb
+      - GB_680 |56.06Mb
+      - GB_681 |48.24Mb
+      - GB_682 |77.19Mb
+      - GB_683 |40.60Mb
+      - JP_881 |32.97Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CA_356 |142.05Mb
-      - CA_358 |93.06Mb
-      - DE_507 |71.19Mb
-      - DE_508 |57.73Mb
-      - DE_509 |60.75Mb
-      - DE_510 |51.30Mb
-      - DE_511 |51.25Mb
-      - GB_686 |52.82Mb
-      - GB_687 |51.05Mb
+      - CA_356 |64.49Mb
+      - CA_358 |104.47Mb
+      - DE_503 |71.19Mb
+      - DE_504 |57.73Mb
+      - DE_505 |60.75Mb
+      - DE_506 |51.30Mb
+      - DE_507 |51.25Mb
+      - GB_684 |65.63Mb
+      - GB_685 |51.23Mb
+      - GB_686 |47.38Mb
+      - GB_687 |52.82Mb
+      - GB_688 |51.05Mb
       - GB_689 |52.35Mb
       - GB_690 |49.64Mb
-      - GB_691 |65.63Mb
       - GB_692 |78.01Mb
-      - GB_693 |47.38Mb
-      - GB_694 |51.23Mb
       - HU_717 |43.86Mb
-      - AU_110 |82.57Mb
-      - GB_682 |56.06Mb
-      - GB_683 |48.24Mb
-      - GB_684 |77.19Mb
-      - GB_685 |40.60Mb
+      - JP_885 |30.37Mb
+      - NL_921 |49.66Mb
+      - NL_922 |53.67Mb
+      - RO_971 |58.49Mb
+      - RO_972 |60.42Mb
+      - US_1135 |33.81Mb
+      - IR_804 |46.82Mb
+      - US_1136 |31.24Mb
+      - US_1138 |71.20Mb
+      - FR_633 |62.55Mb
+      - GB_680 |56.06Mb
+      - GB_681 |48.24Mb
+      - GB_682 |77.19Mb
+      - GB_683 |40.60Mb
+      - JP_881 |32.97Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_356 |142.05Mb
-      - CA_358 |93.06Mb
-      - DE_507 |71.19Mb
-      - DE_508 |57.73Mb
-      - DE_509 |60.75Mb
-      - DE_510 |51.30Mb
-      - DE_511 |51.25Mb
-      - GB_686 |52.82Mb
-      - GB_687 |51.05Mb
+      - CA_356 |64.49Mb
+      - CA_358 |104.47Mb
+      - DE_503 |71.19Mb
+      - DE_504 |57.73Mb
+      - DE_505 |60.75Mb
+      - DE_506 |51.30Mb
+      - DE_507 |51.25Mb
+      - GB_684 |65.63Mb
+      - GB_685 |51.23Mb
+      - GB_686 |47.38Mb
+      - GB_687 |52.82Mb
+      - GB_688 |51.05Mb
       - GB_689 |52.35Mb
       - GB_690 |49.64Mb
-      - GB_691 |65.63Mb
       - GB_692 |78.01Mb
-      - GB_693 |47.38Mb
-      - GB_694 |51.23Mb
       - HU_717 |43.86Mb
-      - AU_110 |82.57Mb
-      - GB_682 |56.06Mb
-      - GB_683 |48.24Mb
-      - GB_684 |77.19Mb
-      - GB_685 |40.60Mb
+      - JP_885 |30.37Mb
+      - NL_921 |49.66Mb
+      - NL_922 |53.67Mb
+      - RO_971 |58.49Mb
+      - RO_972 |60.42Mb
+      - US_1135 |33.81Mb
+      - IR_804 |46.82Mb
+      - US_1136 |31.24Mb
+      - US_1138 |71.20Mb
+      - FR_633 |62.55Mb
+      - GB_680 |56.06Mb
+      - GB_681 |48.24Mb
+      - GB_682 |77.19Mb
+      - GB_683 |40.60Mb
+      - JP_881 |32.97Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA_356 |142.05Mb
-      - CA_358 |93.06Mb
-      - DE_507 |71.19Mb
-      - DE_508 |57.73Mb
-      - DE_509 |60.75Mb
-      - DE_510 |51.30Mb
-      - DE_511 |51.25Mb
-      - GB_686 |52.82Mb
-      - GB_687 |51.05Mb
+      - CA_356 |64.49Mb
+      - CA_358 |104.47Mb
+      - DE_503 |71.19Mb
+      - DE_504 |57.73Mb
+      - DE_505 |60.75Mb
+      - DE_506 |51.30Mb
+      - DE_507 |51.25Mb
+      - GB_684 |65.63Mb
+      - GB_685 |51.23Mb
+      - GB_686 |47.38Mb
+      - GB_687 |52.82Mb
+      - GB_688 |51.05Mb
       - GB_689 |52.35Mb
       - GB_690 |49.64Mb
-      - GB_691 |65.63Mb
       - GB_692 |78.01Mb
-      - GB_693 |47.38Mb
-      - GB_694 |51.23Mb
       - HU_717 |43.86Mb
-      - AU_110 |82.57Mb
-      - GB_682 |56.06Mb
-      - GB_683 |48.24Mb
-      - GB_684 |77.19Mb
-      - GB_685 |40.60Mb
+      - JP_885 |30.37Mb
+      - NL_921 |49.66Mb
+      - NL_922 |53.67Mb
+      - RO_971 |58.49Mb
+      - RO_972 |60.42Mb
+      - US_1135 |33.81Mb
+      - IR_804 |46.82Mb
+      - US_1136 |31.24Mb
+      - US_1138 |71.20Mb
+      - FR_633 |62.55Mb
+      - GB_680 |56.06Mb
+      - GB_681 |48.24Mb
+      - GB_682 |77.19Mb
+      - GB_683 |40.60Mb
+      - JP_881 |32.97Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - CA_356 |142.05Mb
-      - CA_358 |93.06Mb
-      - DE_507 |71.19Mb
-      - DE_508 |57.73Mb
-      - DE_509 |60.75Mb
-      - DE_510 |51.30Mb
-      - DE_511 |51.25Mb
-      - GB_686 |52.82Mb
-      - GB_687 |51.05Mb
+      - CA_356 |64.49Mb
+      - CA_358 |104.47Mb
+      - DE_503 |71.19Mb
+      - DE_504 |57.73Mb
+      - DE_505 |60.75Mb
+      - DE_506 |51.30Mb
+      - DE_507 |51.25Mb
+      - GB_684 |65.63Mb
+      - GB_685 |51.23Mb
+      - GB_686 |47.38Mb
+      - GB_687 |52.82Mb
+      - GB_688 |51.05Mb
       - GB_689 |52.35Mb
       - GB_690 |49.64Mb
-      - GB_691 |65.63Mb
       - GB_692 |78.01Mb
-      - GB_693 |47.38Mb
-      - GB_694 |51.23Mb
       - HU_717 |43.86Mb
-      - AU_110 |82.57Mb
-      - GB_682 |56.06Mb
-      - GB_683 |48.24Mb
-      - GB_684 |77.19Mb
-      - GB_685 |40.60Mb
+      - JP_885 |30.37Mb
+      - NL_921 |49.66Mb
+      - NL_922 |53.67Mb
+      - RO_971 |58.49Mb
+      - RO_972 |60.42Mb
+      - US_1135 |33.81Mb
+      - IR_804 |46.82Mb
+      - US_1136 |31.24Mb
+      - US_1138 |71.20Mb
+      - FR_633 |62.55Mb
+      - GB_680 |56.06Mb
+      - GB_681 |48.24Mb
+      - GB_682 |77.19Mb
+      - GB_683 |40.60Mb
+      - JP_881 |32.97Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA_356 |142.05Mb
-      - CA_358 |93.06Mb
-      - DE_507 |71.19Mb
-      - DE_508 |57.73Mb
-      - DE_509 |60.75Mb
-      - DE_510 |51.30Mb
-      - DE_511 |51.25Mb
-      - GB_686 |52.82Mb
-      - GB_687 |51.05Mb
+      - CA_356 |64.49Mb
+      - CA_358 |104.47Mb
+      - DE_503 |71.19Mb
+      - DE_504 |57.73Mb
+      - DE_505 |60.75Mb
+      - DE_506 |51.30Mb
+      - DE_507 |51.25Mb
+      - GB_684 |65.63Mb
+      - GB_685 |51.23Mb
+      - GB_686 |47.38Mb
+      - GB_687 |52.82Mb
+      - GB_688 |51.05Mb
       - GB_689 |52.35Mb
       - GB_690 |49.64Mb
-      - GB_691 |65.63Mb
       - GB_692 |78.01Mb
-      - GB_693 |47.38Mb
-      - GB_694 |51.23Mb
       - HU_717 |43.86Mb
-      - AU_110 |82.57Mb
-      - GB_682 |56.06Mb
-      - GB_683 |48.24Mb
-      - GB_684 |77.19Mb
-      - GB_685 |40.60Mb
+      - JP_885 |30.37Mb
+      - NL_921 |49.66Mb
+      - NL_922 |53.67Mb
+      - RO_971 |58.49Mb
+      - RO_972 |60.42Mb
+      - US_1135 |33.81Mb
+      - IR_804 |46.82Mb
+      - US_1136 |31.24Mb
+      - US_1138 |71.20Mb
+      - FR_633 |62.55Mb
+      - GB_680 |56.06Mb
+      - GB_681 |48.24Mb
+      - GB_682 |77.19Mb
+      - GB_683 |40.60Mb
+      - JP_881 |32.97Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_356 |142.05Mb
-      - CA_358 |93.06Mb
-      - DE_507 |71.19Mb
-      - DE_508 |57.73Mb
-      - DE_509 |60.75Mb
-      - DE_510 |51.30Mb
-      - DE_511 |51.25Mb
-      - GB_686 |52.82Mb
-      - GB_687 |51.05Mb
+      - CA_356 |64.49Mb
+      - CA_358 |104.47Mb
+      - DE_503 |71.19Mb
+      - DE_504 |57.73Mb
+      - DE_505 |60.75Mb
+      - DE_506 |51.30Mb
+      - DE_507 |51.25Mb
+      - GB_684 |65.63Mb
+      - GB_685 |51.23Mb
+      - GB_686 |47.38Mb
+      - GB_687 |52.82Mb
+      - GB_688 |51.05Mb
       - GB_689 |52.35Mb
       - GB_690 |49.64Mb
-      - GB_691 |65.63Mb
       - GB_692 |78.01Mb
-      - GB_693 |47.38Mb
-      - GB_694 |51.23Mb
       - HU_717 |43.86Mb
-      - AU_110 |82.57Mb
-      - GB_682 |56.06Mb
-      - GB_683 |48.24Mb
-      - GB_684 |77.19Mb
-      - GB_685 |40.60Mb
+      - JP_885 |30.37Mb
+      - NL_921 |49.66Mb
+      - NL_922 |53.67Mb
+      - RO_971 |58.49Mb
+      - RO_972 |60.42Mb
+      - US_1135 |33.81Mb
+      - IR_804 |46.82Mb
+      - US_1136 |31.24Mb
+      - US_1138 |71.20Mb
+      - FR_633 |62.55Mb
+      - GB_680 |56.06Mb
+      - GB_681 |48.24Mb
+      - GB_682 |77.19Mb
+      - GB_683 |40.60Mb
+      - JP_881 |32.97Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -233,27 +313,37 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_356 |142.05Mb
-      - CA_358 |93.06Mb
-      - DE_507 |71.19Mb
-      - DE_508 |57.73Mb
-      - DE_509 |60.75Mb
-      - DE_510 |51.30Mb
-      - DE_511 |51.25Mb
-      - GB_686 |52.82Mb
-      - GB_687 |51.05Mb
+      - CA_356 |64.49Mb
+      - CA_358 |104.47Mb
+      - DE_503 |71.19Mb
+      - DE_504 |57.73Mb
+      - DE_505 |60.75Mb
+      - DE_506 |51.30Mb
+      - DE_507 |51.25Mb
+      - GB_684 |65.63Mb
+      - GB_685 |51.23Mb
+      - GB_686 |47.38Mb
+      - GB_687 |52.82Mb
+      - GB_688 |51.05Mb
       - GB_689 |52.35Mb
       - GB_690 |49.64Mb
-      - GB_691 |65.63Mb
       - GB_692 |78.01Mb
-      - GB_693 |47.38Mb
-      - GB_694 |51.23Mb
       - HU_717 |43.86Mb
-      - AU_110 |82.57Mb
-      - GB_682 |56.06Mb
-      - GB_683 |48.24Mb
-      - GB_684 |77.19Mb
-      - GB_685 |40.60Mb
+      - JP_885 |30.37Mb
+      - NL_921 |49.66Mb
+      - NL_922 |53.67Mb
+      - RO_971 |58.49Mb
+      - RO_972 |60.42Mb
+      - US_1135 |33.81Mb
+      - IR_804 |46.82Mb
+      - US_1136 |31.24Mb
+      - US_1138 |71.20Mb
+      - FR_633 |62.55Mb
+      - GB_680 |56.06Mb
+      - GB_681 |48.24Mb
+      - GB_682 |77.19Mb
+      - GB_683 |40.60Mb
+      - JP_881 |32.97Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
