@@ -5,68 +5,172 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: _17 |30.45Mb, server: 139.162.122.205, port: 3845, type: vmess, uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: DE_425 |59.51Mb, server: 78.46.244.34, port: 33655, type: vmess, uuid: b41303b4-e2c8-4771-cb6c-ef62244a7621, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: GB_520 |49.09Mb, server: 146.70.73.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.73.2}}}
+  - {name: GB_521 |76.48Mb, server: 45.91.83.111, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: ray, headers: {Host: 45.91.83.111}}}
+  - {name: GB_522 |78.35Mb, server: us1nhg-node.aiqiche123.com, port: 13723, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8634, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: ray, headers: {Host: us1nhg-node.aiqiche123.com}}}
+  - {name: GB_523 |49.62Mb, server: italy-milan.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: italy-milan.mah3Hoet.com}}}
+  - {name: GB_524 |52.82Mb, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: uk-manchester.eiw2eemo.com}}}
+  - {name: GB_525 |53.00Mb, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.46.68}}}
+  - {name: GB_526 |45.83Mb, server: switzerland-zurich.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: switzerland-zurich.mah3Hoet.com}}}
+  - {name: GB_527 |48.34Mb, server: 146.70.71.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 146.70.71.2}}}
+  - {name: NL_659 |51.67Mb, server: 154.84.1.198, port: 443, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/080331123005, headers: {Host: 154.84.1.198}}}
+  - {name: RO_696 |68.79Mb, server: 79.110.54.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: 79.110.54.162}}}
+  - {name: RO_697 |74.17Mb, server: usa-lasvegas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-lasvegas.lvuft.com}}}
+  - {name: RU_704 |39.02Mb, server: 0320ru1702.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 0320ru1702.fans8.xyz}}}
+  - {name: KR_642 |32.90Mb, server: jgw3.gaox.ml, port: 443, type: trojan, password: a1718180-d616-4b71-9bb6-3e96ba20f921, skip-cert-verify: true, udp: true}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 3, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - _17 |30.45Mb
+      - DE_425 |59.51Mb
+      - GB_520 |49.09Mb
+      - GB_521 |76.48Mb
+      - GB_522 |78.35Mb
+      - GB_523 |49.62Mb
+      - GB_524 |52.82Mb
+      - GB_525 |53.00Mb
+      - GB_526 |45.83Mb
+      - GB_527 |48.34Mb
+      - NL_659 |51.67Mb
+      - RO_696 |68.79Mb
+      - RO_697 |74.17Mb
+      - RU_704 |39.02Mb
+      - KR_642 |32.90Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - _17 |30.45Mb
+      - DE_425 |59.51Mb
+      - GB_520 |49.09Mb
+      - GB_521 |76.48Mb
+      - GB_522 |78.35Mb
+      - GB_523 |49.62Mb
+      - GB_524 |52.82Mb
+      - GB_525 |53.00Mb
+      - GB_526 |45.83Mb
+      - GB_527 |48.34Mb
+      - NL_659 |51.67Mb
+      - RO_696 |68.79Mb
+      - RO_697 |74.17Mb
+      - RU_704 |39.02Mb
+      - KR_642 |32.90Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - _17 |30.45Mb
+      - DE_425 |59.51Mb
+      - GB_520 |49.09Mb
+      - GB_521 |76.48Mb
+      - GB_522 |78.35Mb
+      - GB_523 |49.62Mb
+      - GB_524 |52.82Mb
+      - GB_525 |53.00Mb
+      - GB_526 |45.83Mb
+      - GB_527 |48.34Mb
+      - NL_659 |51.67Mb
+      - RO_696 |68.79Mb
+      - RO_697 |74.17Mb
+      - RU_704 |39.02Mb
+      - KR_642 |32.90Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - _17 |30.45Mb
+      - DE_425 |59.51Mb
+      - GB_520 |49.09Mb
+      - GB_521 |76.48Mb
+      - GB_522 |78.35Mb
+      - GB_523 |49.62Mb
+      - GB_524 |52.82Mb
+      - GB_525 |53.00Mb
+      - GB_526 |45.83Mb
+      - GB_527 |48.34Mb
+      - NL_659 |51.67Mb
+      - RO_696 |68.79Mb
+      - RO_697 |74.17Mb
+      - RU_704 |39.02Mb
+      - KR_642 |32.90Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - _17 |30.45Mb
+      - DE_425 |59.51Mb
+      - GB_520 |49.09Mb
+      - GB_521 |76.48Mb
+      - GB_522 |78.35Mb
+      - GB_523 |49.62Mb
+      - GB_524 |52.82Mb
+      - GB_525 |53.00Mb
+      - GB_526 |45.83Mb
+      - GB_527 |48.34Mb
+      - NL_659 |51.67Mb
+      - RO_696 |68.79Mb
+      - RO_697 |74.17Mb
+      - RU_704 |39.02Mb
+      - KR_642 |32.90Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - _17 |30.45Mb
+      - DE_425 |59.51Mb
+      - GB_520 |49.09Mb
+      - GB_521 |76.48Mb
+      - GB_522 |78.35Mb
+      - GB_523 |49.62Mb
+      - GB_524 |52.82Mb
+      - GB_525 |53.00Mb
+      - GB_526 |45.83Mb
+      - GB_527 |48.34Mb
+      - NL_659 |51.67Mb
+      - RO_696 |68.79Mb
+      - RO_697 |74.17Mb
+      - RU_704 |39.02Mb
+      - KR_642 |32.90Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - _17 |30.45Mb
+      - DE_425 |59.51Mb
+      - GB_520 |49.09Mb
+      - GB_521 |76.48Mb
+      - GB_522 |78.35Mb
+      - GB_523 |49.62Mb
+      - GB_524 |52.82Mb
+      - GB_525 |53.00Mb
+      - GB_526 |45.83Mb
+      - GB_527 |48.34Mb
+      - NL_659 |51.67Mb
+      - RO_696 |68.79Mb
+      - RO_697 |74.17Mb
+      - RU_704 |39.02Mb
+      - KR_642 |32.90Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -89,9 +193,22 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - _17 |30.45Mb
+      - DE_425 |59.51Mb
+      - GB_520 |49.09Mb
+      - GB_521 |76.48Mb
+      - GB_522 |78.35Mb
+      - GB_523 |49.62Mb
+      - GB_524 |52.82Mb
+      - GB_525 |53.00Mb
+      - GB_526 |45.83Mb
+      - GB_527 |48.34Mb
+      - NL_659 |51.67Mb
+      - RO_696 |68.79Mb
+      - RO_697 |74.17Mb
+      - RU_704 |39.02Mb
+      - KR_642 |32.90Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
