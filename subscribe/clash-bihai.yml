@@ -5,69 +5,133 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: CA_291 |126.13Mb, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-buffalo.lvuft.com, network: ws, ws-opts: {path: /ws}}
+  - {name: CA_292 |123.40Mb, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-buffalo.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-buffalo.lvuft.com}}}
+  - {name: DE_439 |52.22Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: germany-dusseldorf.mah3Hoet.com, network: ws, ws-opts: {path: /ws}}
+  - {name: DE_440 |58.29Mb, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
+  - {name: DE_441 |51.28Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: germany-dusseldorf.mah3Hoet.com, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: GB_537 |47.13Mb, server: italy-milan.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: italy-milan.mah3Hoet.com, network: ws, ws-opts: {path: /ws, headers: {Host: italy-milan.mah3Hoet.com}}}
+  - {name: GB_538 |48.40Mb, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: uk-manchester.eiw2eemo.com, network: ws, ws-opts: {path: /ws}}
+  - {name: GB_540 |48.11Mb, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: uk-manchester.eiw2eemo.com, network: ws, ws-opts: {path: /ws, headers: {Host: uk-manchester.eiw2eemo.com}}}
+  - {name: GB_542 |48.35Mb, server: 146.70.73.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: italy-milan.mah3Hoet.com, network: ws, ws-opts: {path: /ws}}
+  - {name: IR_599 |49.70Mb, server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 3, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - CA_291 |126.13Mb
+      - CA_292 |123.40Mb
+      - DE_439 |52.22Mb
+      - DE_440 |58.29Mb
+      - DE_441 |51.28Mb
+      - GB_537 |47.13Mb
+      - GB_538 |48.40Mb
+      - GB_540 |48.11Mb
+      - GB_542 |48.35Mb
+      - IR_599 |49.70Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - CA_291 |126.13Mb
+      - CA_292 |123.40Mb
+      - DE_439 |52.22Mb
+      - DE_440 |58.29Mb
+      - DE_441 |51.28Mb
+      - GB_537 |47.13Mb
+      - GB_538 |48.40Mb
+      - GB_540 |48.11Mb
+      - GB_542 |48.35Mb
+      - IR_599 |49.70Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CA_291 |126.13Mb
+      - CA_292 |123.40Mb
+      - DE_439 |52.22Mb
+      - DE_440 |58.29Mb
+      - DE_441 |51.28Mb
+      - GB_537 |47.13Mb
+      - GB_538 |48.40Mb
+      - GB_540 |48.11Mb
+      - GB_542 |48.35Mb
+      - IR_599 |49.70Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - CA_291 |126.13Mb
+      - CA_292 |123.40Mb
+      - DE_439 |52.22Mb
+      - DE_440 |58.29Mb
+      - DE_441 |51.28Mb
+      - GB_537 |47.13Mb
+      - GB_538 |48.40Mb
+      - GB_540 |48.11Mb
+      - GB_542 |48.35Mb
+      - IR_599 |49.70Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - CA_291 |126.13Mb
+      - CA_292 |123.40Mb
+      - DE_439 |52.22Mb
+      - DE_440 |58.29Mb
+      - DE_441 |51.28Mb
+      - GB_537 |47.13Mb
+      - GB_538 |48.40Mb
+      - GB_540 |48.11Mb
+      - GB_542 |48.35Mb
+      - IR_599 |49.70Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - CA_291 |126.13Mb
+      - CA_292 |123.40Mb
+      - DE_439 |52.22Mb
+      - DE_440 |58.29Mb
+      - DE_441 |51.28Mb
+      - GB_537 |47.13Mb
+      - GB_538 |48.40Mb
+      - GB_540 |48.11Mb
+      - GB_542 |48.35Mb
+      - IR_599 |49.70Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CA_291 |126.13Mb
+      - CA_292 |123.40Mb
+      - DE_439 |52.22Mb
+      - DE_440 |58.29Mb
+      - DE_441 |51.28Mb
+      - GB_537 |47.13Mb
+      - GB_538 |48.40Mb
+      - GB_540 |48.11Mb
+      - GB_542 |48.35Mb
+      - IR_599 |49.70Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,9 +154,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CA_291 |126.13Mb
+      - CA_292 |123.40Mb
+      - DE_439 |52.22Mb
+      - DE_440 |58.29Mb
+      - DE_441 |51.28Mb
+      - GB_537 |47.13Mb
+      - GB_538 |48.40Mb
+      - GB_540 |48.11Mb
+      - GB_542 |48.35Mb
+      - IR_599 |49.70Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
