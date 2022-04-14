@@ -5,141 +5,253 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CA_268 |69.89Mb, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-buffalo.lvuft.com, network: ws, ws-opts: {path: /ws}}
-  - {name: CA_270 |67.57Mb, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-buffalo.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-buffalo.lvuft.com}}}
-  - {name: DE_354 |57.02Mb, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
-  - {name: DE_355 |50.02Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: germany-dusseldorf.mah3Hoet.com, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: DE_356 |49.98Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: germany-dusseldorf.mah3Hoet.com, network: ws, ws-opts: {path: /ws}}
-  - {name: GB_447 |48.23Mb, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: uk-manchester.eiw2eemo.com, network: ws, ws-opts: {path: /ws, headers: {Host: uk-manchester.eiw2eemo.com}}}
-  - {name: GB_450 |31.45Mb, server: 146.70.73.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: italy-milan.mah3Hoet.com, network: ws, ws-opts: {path: /ws}}
-  - {name: GB_451 |47.97Mb, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: uk-manchester.eiw2eemo.com, network: ws, ws-opts: {path: /ws}}
-  - {name: HU_459 |34.04Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: JP_554 |30.49Mb, server: 45.77.22.155, port: 49192, type: vmess, uuid: 190e9608-0d6c-4b59-8665-c2fb0d632b6f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: CA_267 |69.89Mb, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-buffalo.lvuft.com, network: ws, ws-opts: {path: /ws}}
+  - {name: CA_269 |67.57Mb, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-buffalo.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-buffalo.lvuft.com}}}
+  - {name: DE_356 |57.02Mb, server: 194.195.240.132, port: 33210, type: vmess, uuid: f46d05d6-8d41-4e0a-993e-e2658ac29f85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}}
+  - {name: DE_357 |50.02Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: germany-dusseldorf.mah3Hoet.com, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: DE_358 |49.98Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: germany-dusseldorf.mah3Hoet.com, network: ws, ws-opts: {path: /ws}}
+  - {name: GB_449 |48.23Mb, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: uk-manchester.eiw2eemo.com, network: ws, ws-opts: {path: /ws, headers: {Host: uk-manchester.eiw2eemo.com}}}
+  - {name: GB_451 |31.45Mb, server: 146.70.73.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: italy-milan.mah3Hoet.com, network: ws, ws-opts: {path: /ws}}
+  - {name: GB_452 |47.97Mb, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: uk-manchester.eiw2eemo.com, network: ws, ws-opts: {path: /ws}}
+  - {name: HU_458 |34.04Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: JP_550 |30.49Mb, server: 45.77.22.155, port: 49192, type: vmess, uuid: 190e9608-0d6c-4b59-8665-c2fb0d632b6f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: US_1985 |68.52Mb, server: 154.94.214.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: lvuft.com, network: ws, ws-opts: {path: /ws}}
+  - {name: US_1986 |65.90Mb, server: lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: lvuft.com}}}
+  - {name: US_1987 |125.02Mb, server: 45.35.84.162, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws}}
+  - {name: US_1988 |53.82Mb, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-washington.lvuft.com, network: ws, ws-opts: {path: /ws}}
+  - {name: US_1989 |59.33Mb, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: usa-washington.lvuft.com}}}
+  - {name: US_1991 |143.74Mb, server: usa-dallas.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-dallas.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-dallas.lvuft.com}}}
+  - {name: US_1992 |67.10Mb, server: 173.255.215.146, port: 11443, type: vmess, uuid: c04e69b1-3498-4187-9193-b657fd40cb65, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: usav2.ddns.tjiasu.xyz, network: ws, ws-opts: {path: /api/common}}
+  - {name: US_1996 |63.55Mb, server: 104.168.13.8, port: 41342, type: vmess, uuid: 3aa90670-6d21-4287-eec5-0cd0b21d579a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: 104.168.13.8, network: ws, ws-opts: {path: /}}
+  - {name: US_1997 |64.50Mb, server: 23.94.120.19, port: 28554, type: vmess, uuid: 4a4c96c5-7b8b-4612-c715-6b91a9c34d07, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: US_1998 |156.15Mb, server: iesei1ei.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: iesei1ei.com, network: ws, ws-opts: {path: /ws, headers: {Host: iesei1ei.com}}}
+  - {name: US_1999 |73.23Mb, server: 142.4.127.67, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: www.47727450.xyz, network: ws, ws-opts: {path: /path/310910211916}}
+  - {name: US_2001 |186.17Mb, server: 208.98.48.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: iesei1ei.com, network: ws, ws-opts: {path: /ws}}
+  - {name: US_2003 |47.54Mb, server: 107.175.62.31, port: 18205, type: vmess, uuid: 51ffe900-f9a4-4517-b123-9d512d0f5069, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: US_2023 |30.86Mb, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: true, udp: true}
+  - {name: US_2025 |37.81Mb, server: ussc.scsevers.cf, port: 443, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CA_268 |69.89Mb
-      - CA_270 |67.57Mb
-      - DE_354 |57.02Mb
-      - DE_355 |50.02Mb
-      - DE_356 |49.98Mb
-      - GB_447 |48.23Mb
-      - GB_450 |31.45Mb
-      - GB_451 |47.97Mb
-      - HU_459 |34.04Mb
-      - JP_554 |30.49Mb
+      - CA_267 |69.89Mb
+      - CA_269 |67.57Mb
+      - DE_356 |57.02Mb
+      - DE_357 |50.02Mb
+      - DE_358 |49.98Mb
+      - GB_449 |48.23Mb
+      - GB_451 |31.45Mb
+      - GB_452 |47.97Mb
+      - HU_458 |34.04Mb
+      - JP_550 |30.49Mb
+      - US_1985 |68.52Mb
+      - US_1986 |65.90Mb
+      - US_1987 |125.02Mb
+      - US_1988 |53.82Mb
+      - US_1989 |59.33Mb
+      - US_1991 |143.74Mb
+      - US_1992 |67.10Mb
+      - US_1996 |63.55Mb
+      - US_1997 |64.50Mb
+      - US_1998 |156.15Mb
+      - US_1999 |73.23Mb
+      - US_2001 |186.17Mb
+      - US_2003 |47.54Mb
+      - US_2023 |30.86Mb
+      - US_2025 |37.81Mb
       - "NULL"
-      - NULL 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - CA_268 |69.89Mb
-      - CA_270 |67.57Mb
-      - DE_354 |57.02Mb
-      - DE_355 |50.02Mb
-      - DE_356 |49.98Mb
-      - GB_447 |48.23Mb
-      - GB_450 |31.45Mb
-      - GB_451 |47.97Mb
-      - HU_459 |34.04Mb
-      - JP_554 |30.49Mb
+      - CA_267 |69.89Mb
+      - CA_269 |67.57Mb
+      - DE_356 |57.02Mb
+      - DE_357 |50.02Mb
+      - DE_358 |49.98Mb
+      - GB_449 |48.23Mb
+      - GB_451 |31.45Mb
+      - GB_452 |47.97Mb
+      - HU_458 |34.04Mb
+      - JP_550 |30.49Mb
+      - US_1985 |68.52Mb
+      - US_1986 |65.90Mb
+      - US_1987 |125.02Mb
+      - US_1988 |53.82Mb
+      - US_1989 |59.33Mb
+      - US_1991 |143.74Mb
+      - US_1992 |67.10Mb
+      - US_1996 |63.55Mb
+      - US_1997 |64.50Mb
+      - US_1998 |156.15Mb
+      - US_1999 |73.23Mb
+      - US_2001 |186.17Mb
+      - US_2003 |47.54Mb
+      - US_2023 |30.86Mb
+      - US_2025 |37.81Mb
       - "NULL"
-      - NULL 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_268 |69.89Mb
-      - CA_270 |67.57Mb
-      - DE_354 |57.02Mb
-      - DE_355 |50.02Mb
-      - DE_356 |49.98Mb
-      - GB_447 |48.23Mb
-      - GB_450 |31.45Mb
-      - GB_451 |47.97Mb
-      - HU_459 |34.04Mb
-      - JP_554 |30.49Mb
+      - CA_267 |69.89Mb
+      - CA_269 |67.57Mb
+      - DE_356 |57.02Mb
+      - DE_357 |50.02Mb
+      - DE_358 |49.98Mb
+      - GB_449 |48.23Mb
+      - GB_451 |31.45Mb
+      - GB_452 |47.97Mb
+      - HU_458 |34.04Mb
+      - JP_550 |30.49Mb
+      - US_1985 |68.52Mb
+      - US_1986 |65.90Mb
+      - US_1987 |125.02Mb
+      - US_1988 |53.82Mb
+      - US_1989 |59.33Mb
+      - US_1991 |143.74Mb
+      - US_1992 |67.10Mb
+      - US_1996 |63.55Mb
+      - US_1997 |64.50Mb
+      - US_1998 |156.15Mb
+      - US_1999 |73.23Mb
+      - US_2001 |186.17Mb
+      - US_2003 |47.54Mb
+      - US_2023 |30.86Mb
+      - US_2025 |37.81Mb
       - "NULL"
-      - NULL 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA_268 |69.89Mb
-      - CA_270 |67.57Mb
-      - DE_354 |57.02Mb
-      - DE_355 |50.02Mb
-      - DE_356 |49.98Mb
-      - GB_447 |48.23Mb
-      - GB_450 |31.45Mb
-      - GB_451 |47.97Mb
-      - HU_459 |34.04Mb
-      - JP_554 |30.49Mb
+      - CA_267 |69.89Mb
+      - CA_269 |67.57Mb
+      - DE_356 |57.02Mb
+      - DE_357 |50.02Mb
+      - DE_358 |49.98Mb
+      - GB_449 |48.23Mb
+      - GB_451 |31.45Mb
+      - GB_452 |47.97Mb
+      - HU_458 |34.04Mb
+      - JP_550 |30.49Mb
+      - US_1985 |68.52Mb
+      - US_1986 |65.90Mb
+      - US_1987 |125.02Mb
+      - US_1988 |53.82Mb
+      - US_1989 |59.33Mb
+      - US_1991 |143.74Mb
+      - US_1992 |67.10Mb
+      - US_1996 |63.55Mb
+      - US_1997 |64.50Mb
+      - US_1998 |156.15Mb
+      - US_1999 |73.23Mb
+      - US_2001 |186.17Mb
+      - US_2003 |47.54Mb
+      - US_2023 |30.86Mb
+      - US_2025 |37.81Mb
       - "NULL"
-      - NULL 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - CA_268 |69.89Mb
-      - CA_270 |67.57Mb
-      - DE_354 |57.02Mb
-      - DE_355 |50.02Mb
-      - DE_356 |49.98Mb
-      - GB_447 |48.23Mb
-      - GB_450 |31.45Mb
-      - GB_451 |47.97Mb
-      - HU_459 |34.04Mb
-      - JP_554 |30.49Mb
+      - CA_267 |69.89Mb
+      - CA_269 |67.57Mb
+      - DE_356 |57.02Mb
+      - DE_357 |50.02Mb
+      - DE_358 |49.98Mb
+      - GB_449 |48.23Mb
+      - GB_451 |31.45Mb
+      - GB_452 |47.97Mb
+      - HU_458 |34.04Mb
+      - JP_550 |30.49Mb
+      - US_1985 |68.52Mb
+      - US_1986 |65.90Mb
+      - US_1987 |125.02Mb
+      - US_1988 |53.82Mb
+      - US_1989 |59.33Mb
+      - US_1991 |143.74Mb
+      - US_1992 |67.10Mb
+      - US_1996 |63.55Mb
+      - US_1997 |64.50Mb
+      - US_1998 |156.15Mb
+      - US_1999 |73.23Mb
+      - US_2001 |186.17Mb
+      - US_2003 |47.54Mb
+      - US_2023 |30.86Mb
+      - US_2025 |37.81Mb
       - "NULL"
-      - NULL 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA_268 |69.89Mb
-      - CA_270 |67.57Mb
-      - DE_354 |57.02Mb
-      - DE_355 |50.02Mb
-      - DE_356 |49.98Mb
-      - GB_447 |48.23Mb
-      - GB_450 |31.45Mb
-      - GB_451 |47.97Mb
-      - HU_459 |34.04Mb
-      - JP_554 |30.49Mb
+      - CA_267 |69.89Mb
+      - CA_269 |67.57Mb
+      - DE_356 |57.02Mb
+      - DE_357 |50.02Mb
+      - DE_358 |49.98Mb
+      - GB_449 |48.23Mb
+      - GB_451 |31.45Mb
+      - GB_452 |47.97Mb
+      - HU_458 |34.04Mb
+      - JP_550 |30.49Mb
+      - US_1985 |68.52Mb
+      - US_1986 |65.90Mb
+      - US_1987 |125.02Mb
+      - US_1988 |53.82Mb
+      - US_1989 |59.33Mb
+      - US_1991 |143.74Mb
+      - US_1992 |67.10Mb
+      - US_1996 |63.55Mb
+      - US_1997 |64.50Mb
+      - US_1998 |156.15Mb
+      - US_1999 |73.23Mb
+      - US_2001 |186.17Mb
+      - US_2003 |47.54Mb
+      - US_2023 |30.86Mb
+      - US_2025 |37.81Mb
       - "NULL"
-      - NULL 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_268 |69.89Mb
-      - CA_270 |67.57Mb
-      - DE_354 |57.02Mb
-      - DE_355 |50.02Mb
-      - DE_356 |49.98Mb
-      - GB_447 |48.23Mb
-      - GB_450 |31.45Mb
-      - GB_451 |47.97Mb
-      - HU_459 |34.04Mb
-      - JP_554 |30.49Mb
+      - CA_267 |69.89Mb
+      - CA_269 |67.57Mb
+      - DE_356 |57.02Mb
+      - DE_357 |50.02Mb
+      - DE_358 |49.98Mb
+      - GB_449 |48.23Mb
+      - GB_451 |31.45Mb
+      - GB_452 |47.97Mb
+      - HU_458 |34.04Mb
+      - JP_550 |30.49Mb
+      - US_1985 |68.52Mb
+      - US_1986 |65.90Mb
+      - US_1987 |125.02Mb
+      - US_1988 |53.82Mb
+      - US_1989 |59.33Mb
+      - US_1991 |143.74Mb
+      - US_1992 |67.10Mb
+      - US_1996 |63.55Mb
+      - US_1997 |64.50Mb
+      - US_1998 |156.15Mb
+      - US_1999 |73.23Mb
+      - US_2001 |186.17Mb
+      - US_2003 |47.54Mb
+      - US_2023 |30.86Mb
+      - US_2025 |37.81Mb
       - "NULL"
-      - NULL 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,18 +274,32 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_268 |69.89Mb
-      - CA_270 |67.57Mb
-      - DE_354 |57.02Mb
-      - DE_355 |50.02Mb
-      - DE_356 |49.98Mb
-      - GB_447 |48.23Mb
-      - GB_450 |31.45Mb
-      - GB_451 |47.97Mb
-      - HU_459 |34.04Mb
-      - JP_554 |30.49Mb
+      - CA_267 |69.89Mb
+      - CA_269 |67.57Mb
+      - DE_356 |57.02Mb
+      - DE_357 |50.02Mb
+      - DE_358 |49.98Mb
+      - GB_449 |48.23Mb
+      - GB_451 |31.45Mb
+      - GB_452 |47.97Mb
+      - HU_458 |34.04Mb
+      - JP_550 |30.49Mb
+      - US_1985 |68.52Mb
+      - US_1986 |65.90Mb
+      - US_1987 |125.02Mb
+      - US_1988 |53.82Mb
+      - US_1989 |59.33Mb
+      - US_1991 |143.74Mb
+      - US_1992 |67.10Mb
+      - US_1996 |63.55Mb
+      - US_1997 |64.50Mb
+      - US_1998 |156.15Mb
+      - US_1999 |73.23Mb
+      - US_2001 |186.17Mb
+      - US_2003 |47.54Mb
+      - US_2023 |30.86Mb
+      - US_2025 |37.81Mb
       - "NULL"
-      - NULL 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
