@@ -5,17 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CA_272 |74.97Mb, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-buffalo.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-buffalo.lvuft.com}}}
-  - {name: CA_273 |81.23Mb, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-buffalo.lvuft.com, network: ws, ws-opts: {path: /ws}}
-  - {name: DE_376 |44.13Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: germany-dusseldorf.mah3Hoet.com, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
-  - {name: DE_378 |45.28Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: germany-dusseldorf.mah3Hoet.com, network: ws, ws-opts: {path: /ws}}
-  - {name: GB_473 |55.00Mb, server: italy-milan.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: italy-milan.mah3Hoet.com, network: ws, ws-opts: {path: /ws, headers: {Host: italy-milan.mah3Hoet.com}}}
-  - {name: GB_474 |51.27Mb, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: uk-manchester.eiw2eemo.com, network: ws, ws-opts: {path: /ws}}
-  - {name: GB_475 |51.41Mb, server: 146.70.73.2, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: italy-milan.mah3Hoet.com, network: ws, ws-opts: {path: /ws}}
-  - {name: GB_476 |51.52Mb, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: uk-manchester.eiw2eemo.com, network: ws, ws-opts: {path: /ws, headers: {Host: uk-manchester.eiw2eemo.com}}}
-  - {name: HU_490 |35.33Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: JP_583 |32.91Mb, server: 45.77.22.155, port: 49192, type: vmess, uuid: 190e9608-0d6c-4b59-8665-c2fb0d632b6f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: US_249 |87.68Mb, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, skip-cert-verify: true, udp: true}
+  - {name: US_250 |60.57Mb, server: asd1v.baozipay.top, port: 443, type: trojan, password: rYA8dFQI6R2qTwP0, skip-cert-verify: true, udp: true}
+  - {name: US_256 |67.46Mb, server: ussc.scsevers.cf, port: 443, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
+  - {name: US_267 |52.58Mb, server: usd.scsevers.cf, port: 443, type: trojan, password: sharecentretest, skip-cert-verify: true, udp: true}
   - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
@@ -23,17 +17,11 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - CA_272 |74.97Mb
-      - CA_273 |81.23Mb
-      - DE_376 |44.13Mb
-      - DE_378 |45.28Mb
-      - GB_473 |55.00Mb
-      - GB_474 |51.27Mb
-      - GB_475 |51.41Mb
-      - GB_476 |51.52Mb
-      - HU_490 |35.33Mb
-      - JP_583 |32.91Mb
       - "NULL"
+      - US_249 |87.68Mb
+      - US_250 |60.57Mb
+      - US_256 |67.46Mb
+      - US_267 |52.58Mb
       - NULL 2
   - name: ♻️ 自动选择
     type: url-test
@@ -41,17 +29,11 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - CA_272 |74.97Mb
-      - CA_273 |81.23Mb
-      - DE_376 |44.13Mb
-      - DE_378 |45.28Mb
-      - GB_473 |55.00Mb
-      - GB_474 |51.27Mb
-      - GB_475 |51.41Mb
-      - GB_476 |51.52Mb
-      - HU_490 |35.33Mb
-      - JP_583 |32.91Mb
       - "NULL"
+      - US_249 |87.68Mb
+      - US_250 |60.57Mb
+      - US_256 |67.46Mb
+      - US_267 |52.58Mb
       - NULL 2
   - name: 🌍 国外媒体
     type: select
@@ -59,68 +41,44 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CA_272 |74.97Mb
-      - CA_273 |81.23Mb
-      - DE_376 |44.13Mb
-      - DE_378 |45.28Mb
-      - GB_473 |55.00Mb
-      - GB_474 |51.27Mb
-      - GB_475 |51.41Mb
-      - GB_476 |51.52Mb
-      - HU_490 |35.33Mb
-      - JP_583 |32.91Mb
       - "NULL"
+      - US_249 |87.68Mb
+      - US_250 |60.57Mb
+      - US_256 |67.46Mb
+      - US_267 |52.58Mb
       - NULL 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA_272 |74.97Mb
-      - CA_273 |81.23Mb
-      - DE_376 |44.13Mb
-      - DE_378 |45.28Mb
-      - GB_473 |55.00Mb
-      - GB_474 |51.27Mb
-      - GB_475 |51.41Mb
-      - GB_476 |51.52Mb
-      - HU_490 |35.33Mb
-      - JP_583 |32.91Mb
       - "NULL"
+      - US_249 |87.68Mb
+      - US_250 |60.57Mb
+      - US_256 |67.46Mb
+      - US_267 |52.58Mb
       - NULL 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - CA_272 |74.97Mb
-      - CA_273 |81.23Mb
-      - DE_376 |44.13Mb
-      - DE_378 |45.28Mb
-      - GB_473 |55.00Mb
-      - GB_474 |51.27Mb
-      - GB_475 |51.41Mb
-      - GB_476 |51.52Mb
-      - HU_490 |35.33Mb
-      - JP_583 |32.91Mb
       - "NULL"
+      - US_249 |87.68Mb
+      - US_250 |60.57Mb
+      - US_256 |67.46Mb
+      - US_267 |52.58Mb
       - NULL 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - CA_272 |74.97Mb
-      - CA_273 |81.23Mb
-      - DE_376 |44.13Mb
-      - DE_378 |45.28Mb
-      - GB_473 |55.00Mb
-      - GB_474 |51.27Mb
-      - GB_475 |51.41Mb
-      - GB_476 |51.52Mb
-      - HU_490 |35.33Mb
-      - JP_583 |32.91Mb
       - "NULL"
+      - US_249 |87.68Mb
+      - US_250 |60.57Mb
+      - US_256 |67.46Mb
+      - US_267 |52.58Mb
       - NULL 2
   - name: 📢 谷歌FCM
     type: select
@@ -128,17 +86,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_272 |74.97Mb
-      - CA_273 |81.23Mb
-      - DE_376 |44.13Mb
-      - DE_378 |45.28Mb
-      - GB_473 |55.00Mb
-      - GB_474 |51.27Mb
-      - GB_475 |51.41Mb
-      - GB_476 |51.52Mb
-      - HU_490 |35.33Mb
-      - JP_583 |32.91Mb
       - "NULL"
+      - US_249 |87.68Mb
+      - US_250 |60.57Mb
+      - US_256 |67.46Mb
+      - US_267 |52.58Mb
       - NULL 2
   - name: 🎯 全球直连
     type: select
@@ -162,17 +114,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CA_272 |74.97Mb
-      - CA_273 |81.23Mb
-      - DE_376 |44.13Mb
-      - DE_378 |45.28Mb
-      - GB_473 |55.00Mb
-      - GB_474 |51.27Mb
-      - GB_475 |51.41Mb
-      - GB_476 |51.52Mb
-      - HU_490 |35.33Mb
-      - JP_583 |32.91Mb
       - "NULL"
+      - US_249 |87.68Mb
+      - US_250 |60.57Mb
+      - US_256 |67.46Mb
+      - US_267 |52.58Mb
       - NULL 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
