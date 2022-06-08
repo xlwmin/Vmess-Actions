@@ -5,69 +5,141 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: CA_160 |111.38Mb, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-buffalo.lvuft.com, network: ws, ws-opts: {path: /ws, headers: {Host: usa-buffalo.lvuft.com}}}
+  - {name: CA_164 |115.83Mb, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-buffalo.lvuft.com, network: ws, ws-opts: {path: /ws}}
+  - {name: DE_300 |48.77Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: germany-dusseldorf.mah3Hoet.com, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: DE_301 |47.01Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: germany-dusseldorf.mah3Hoet.com, network: ws, ws-opts: {path: /ws}}
+  - {name: GB_392 |38.73Mb, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: uk-manchester.eiw2eemo.com, network: ws, ws-opts: {path: /ws}}
+  - {name: GB_393 |65.76Mb, server: 45.150.165.97, port: 20083, type: vmess, uuid: 4a28c121-7b5b-41bc-8a66-12f3fa8ce422, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: GB_394 |39.66Mb, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: uk-manchester.eiw2eemo.com, network: ws, ws-opts: {path: /ws, headers: {Host: uk-manchester.eiw2eemo.com}}}
+  - {name: HU_423 |36.44Mb, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, servername: 185.225.69.134}
+  - {name: GB_396 |66.64Mb, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, skip-cert-verify: true, udp: true}
+  - {name: GB_397 |60.62Mb, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, skip-cert-verify: true, udp: true}
+  - {name: GB_399 |67.11Mb, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, skip-cert-verify: true, udp: true}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 3, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - CA_160 |111.38Mb
+      - CA_164 |115.83Mb
+      - DE_300 |48.77Mb
+      - DE_301 |47.01Mb
+      - GB_392 |38.73Mb
+      - GB_393 |65.76Mb
+      - GB_394 |39.66Mb
+      - HU_423 |36.44Mb
+      - GB_396 |66.64Mb
+      - GB_397 |60.62Mb
+      - GB_399 |67.11Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - CA_160 |111.38Mb
+      - CA_164 |115.83Mb
+      - DE_300 |48.77Mb
+      - DE_301 |47.01Mb
+      - GB_392 |38.73Mb
+      - GB_393 |65.76Mb
+      - GB_394 |39.66Mb
+      - HU_423 |36.44Mb
+      - GB_396 |66.64Mb
+      - GB_397 |60.62Mb
+      - GB_399 |67.11Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - CA_160 |111.38Mb
+      - CA_164 |115.83Mb
+      - DE_300 |48.77Mb
+      - DE_301 |47.01Mb
+      - GB_392 |38.73Mb
+      - GB_393 |65.76Mb
+      - GB_394 |39.66Mb
+      - HU_423 |36.44Mb
+      - GB_396 |66.64Mb
+      - GB_397 |60.62Mb
+      - GB_399 |67.11Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - CA_160 |111.38Mb
+      - CA_164 |115.83Mb
+      - DE_300 |48.77Mb
+      - DE_301 |47.01Mb
+      - GB_392 |38.73Mb
+      - GB_393 |65.76Mb
+      - GB_394 |39.66Mb
+      - HU_423 |36.44Mb
+      - GB_396 |66.64Mb
+      - GB_397 |60.62Mb
+      - GB_399 |67.11Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - CA_160 |111.38Mb
+      - CA_164 |115.83Mb
+      - DE_300 |48.77Mb
+      - DE_301 |47.01Mb
+      - GB_392 |38.73Mb
+      - GB_393 |65.76Mb
+      - GB_394 |39.66Mb
+      - HU_423 |36.44Mb
+      - GB_396 |66.64Mb
+      - GB_397 |60.62Mb
+      - GB_399 |67.11Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - CA_160 |111.38Mb
+      - CA_164 |115.83Mb
+      - DE_300 |48.77Mb
+      - DE_301 |47.01Mb
+      - GB_392 |38.73Mb
+      - GB_393 |65.76Mb
+      - GB_394 |39.66Mb
+      - HU_423 |36.44Mb
+      - GB_396 |66.64Mb
+      - GB_397 |60.62Mb
+      - GB_399 |67.11Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CA_160 |111.38Mb
+      - CA_164 |115.83Mb
+      - DE_300 |48.77Mb
+      - DE_301 |47.01Mb
+      - GB_392 |38.73Mb
+      - GB_393 |65.76Mb
+      - GB_394 |39.66Mb
+      - HU_423 |36.44Mb
+      - GB_396 |66.64Mb
+      - GB_397 |60.62Mb
+      - GB_399 |67.11Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,9 +162,18 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - CA_160 |111.38Mb
+      - CA_164 |115.83Mb
+      - DE_300 |48.77Mb
+      - DE_301 |47.01Mb
+      - GB_392 |38.73Mb
+      - GB_393 |65.76Mb
+      - GB_394 |39.66Mb
+      - HU_423 |36.44Mb
+      - GB_396 |66.64Mb
+      - GB_397 |60.62Mb
+      - GB_399 |67.11Mb
       - "NULL"
-      - NULL 2
-      - NULL 3
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
