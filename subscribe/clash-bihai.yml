@@ -5,69 +5,221 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 3, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: CA_167 |128.55Mb, server: 192.186.129.66, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: usa-buffalo.lvuft.com, network: ws, ws-opts: {path: /ws}}
+  - {name: DE_326 |46.37Mb, server: 146.0.42.87, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: germany-dusseldorf.mah3Hoet.com, network: ws, ws-opts: {path: /ws}}
+  - {name: DE_327 |43.25Mb, server: germany-dusseldorf.mah3Hoet.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: germany-dusseldorf.mah3Hoet.com, network: ws, ws-opts: {path: /ws, headers: {Host: germany-dusseldorf.mah3Hoet.com}}}
+  - {name: GB_423 |52.89Mb, server: uk-manchester.eiw2eemo.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: uk-manchester.eiw2eemo.com, network: ws, ws-opts: {path: /ws, headers: {Host: uk-manchester.eiw2eemo.com}}}
+  - {name: GB_424 |52.86Mb, server: 146.70.46.68, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: uk-manchester.eiw2eemo.com, network: ws, ws-opts: {path: /ws}}
+  - {name: RU_782 |37.94Mb, server: 422wkl.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, servername: 422wkl.fans8.xyz, network: ws, ws-opts: {path: /ray, headers: {Host: 422wkl.fans8.xyz}}}
+  - {name: GB_396 |67.02Mb, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, skip-cert-verify: true, udp: true}
+  - {name: GB_397 |64.45Mb, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, skip-cert-verify: true, udp: true}
+  - {name: US_921 |81.57Mb, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, skip-cert-verify: true, udp: true}
+  - {name: US_925 |81.75Mb, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, skip-cert-verify: true, udp: true}
+  - {name: LT_566 |33.27Mb, server: 213.183.53.200, port: 9097, type: ssr, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_568 |35.51Mb, server: 213.183.53.200, port: 9050, type: ssr, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_569 |42.96Mb, server: 213.183.53.177, port: 9008, type: ssr, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_571 |35.82Mb, server: 213.183.53.200, port: 9003, type: ssr, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_579 |34.60Mb, server: 213.183.53.200, port: 9024, type: ssr, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_590 |43.52Mb, server: 213.183.53.177, port: 9059, type: ssr, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_591 |32.10Mb, server: 213.183.53.200, port: 9015, type: ssr, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_592 |33.27Mb, server: 213.183.53.200, port: 9073, type: ssr, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_594 |41.93Mb, server: 213.183.53.177, port: 9041, type: ssr, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_597 |34.78Mb, server: 213.183.53.200, port: 9027, type: ssr, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_599 |43.28Mb, server: 213.183.53.177, port: 9056, type: ssr, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: LT_603 |34.98Mb, server: 213.183.53.200, port: 9094, type: ssr, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - CA_167 |128.55Mb
+      - DE_326 |46.37Mb
+      - DE_327 |43.25Mb
+      - GB_423 |52.89Mb
+      - GB_424 |52.86Mb
+      - RU_782 |37.94Mb
+      - GB_396 |67.02Mb
+      - GB_397 |64.45Mb
+      - US_921 |81.57Mb
+      - US_925 |81.75Mb
+      - LT_566 |33.27Mb
+      - LT_568 |35.51Mb
+      - LT_569 |42.96Mb
+      - LT_571 |35.82Mb
+      - LT_579 |34.60Mb
+      - LT_590 |43.52Mb
+      - LT_591 |32.10Mb
+      - LT_592 |33.27Mb
+      - LT_594 |41.93Mb
+      - LT_597 |34.78Mb
+      - LT_599 |43.28Mb
+      - LT_603 |34.98Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - CA_167 |128.55Mb
+      - DE_326 |46.37Mb
+      - DE_327 |43.25Mb
+      - GB_423 |52.89Mb
+      - GB_424 |52.86Mb
+      - RU_782 |37.94Mb
+      - GB_396 |67.02Mb
+      - GB_397 |64.45Mb
+      - US_921 |81.57Mb
+      - US_925 |81.75Mb
+      - LT_566 |33.27Mb
+      - LT_568 |35.51Mb
+      - LT_569 |42.96Mb
+      - LT_571 |35.82Mb
+      - LT_579 |34.60Mb
+      - LT_590 |43.52Mb
+      - LT_591 |32.10Mb
+      - LT_592 |33.27Mb
+      - LT_594 |41.93Mb
+      - LT_597 |34.78Mb
+      - LT_599 |43.28Mb
+      - LT_603 |34.98Mb
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - CA_167 |128.55Mb
+      - DE_326 |46.37Mb
+      - DE_327 |43.25Mb
+      - GB_423 |52.89Mb
+      - GB_424 |52.86Mb
+      - RU_782 |37.94Mb
+      - GB_396 |67.02Mb
+      - GB_397 |64.45Mb
+      - US_921 |81.57Mb
+      - US_925 |81.75Mb
+      - LT_566 |33.27Mb
+      - LT_568 |35.51Mb
+      - LT_569 |42.96Mb
+      - LT_571 |35.82Mb
+      - LT_579 |34.60Mb
+      - LT_590 |43.52Mb
+      - LT_591 |32.10Mb
+      - LT_592 |33.27Mb
+      - LT_594 |41.93Mb
+      - LT_597 |34.78Mb
+      - LT_599 |43.28Mb
+      - LT_603 |34.98Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - CA_167 |128.55Mb
+      - DE_326 |46.37Mb
+      - DE_327 |43.25Mb
+      - GB_423 |52.89Mb
+      - GB_424 |52.86Mb
+      - RU_782 |37.94Mb
+      - GB_396 |67.02Mb
+      - GB_397 |64.45Mb
+      - US_921 |81.57Mb
+      - US_925 |81.75Mb
+      - LT_566 |33.27Mb
+      - LT_568 |35.51Mb
+      - LT_569 |42.96Mb
+      - LT_571 |35.82Mb
+      - LT_579 |34.60Mb
+      - LT_590 |43.52Mb
+      - LT_591 |32.10Mb
+      - LT_592 |33.27Mb
+      - LT_594 |41.93Mb
+      - LT_597 |34.78Mb
+      - LT_599 |43.28Mb
+      - LT_603 |34.98Mb
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - CA_167 |128.55Mb
+      - DE_326 |46.37Mb
+      - DE_327 |43.25Mb
+      - GB_423 |52.89Mb
+      - GB_424 |52.86Mb
+      - RU_782 |37.94Mb
+      - GB_396 |67.02Mb
+      - GB_397 |64.45Mb
+      - US_921 |81.57Mb
+      - US_925 |81.75Mb
+      - LT_566 |33.27Mb
+      - LT_568 |35.51Mb
+      - LT_569 |42.96Mb
+      - LT_571 |35.82Mb
+      - LT_579 |34.60Mb
+      - LT_590 |43.52Mb
+      - LT_591 |32.10Mb
+      - LT_592 |33.27Mb
+      - LT_594 |41.93Mb
+      - LT_597 |34.78Mb
+      - LT_599 |43.28Mb
+      - LT_603 |34.98Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - CA_167 |128.55Mb
+      - DE_326 |46.37Mb
+      - DE_327 |43.25Mb
+      - GB_423 |52.89Mb
+      - GB_424 |52.86Mb
+      - RU_782 |37.94Mb
+      - GB_396 |67.02Mb
+      - GB_397 |64.45Mb
+      - US_921 |81.57Mb
+      - US_925 |81.75Mb
+      - LT_566 |33.27Mb
+      - LT_568 |35.51Mb
+      - LT_569 |42.96Mb
+      - LT_571 |35.82Mb
+      - LT_579 |34.60Mb
+      - LT_590 |43.52Mb
+      - LT_591 |32.10Mb
+      - LT_592 |33.27Mb
+      - LT_594 |41.93Mb
+      - LT_597 |34.78Mb
+      - LT_599 |43.28Mb
+      - LT_603 |34.98Mb
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - CA_167 |128.55Mb
+      - DE_326 |46.37Mb
+      - DE_327 |43.25Mb
+      - GB_423 |52.89Mb
+      - GB_424 |52.86Mb
+      - RU_782 |37.94Mb
+      - GB_396 |67.02Mb
+      - GB_397 |64.45Mb
+      - US_921 |81.57Mb
+      - US_925 |81.75Mb
+      - LT_566 |33.27Mb
+      - LT_568 |35.51Mb
+      - LT_569 |42.96Mb
+      - LT_571 |35.82Mb
+      - LT_579 |34.60Mb
+      - LT_590 |43.52Mb
+      - LT_591 |32.10Mb
+      - LT_592 |33.27Mb
+      - LT_594 |41.93Mb
+      - LT_597 |34.78Mb
+      - LT_599 |43.28Mb
+      - LT_603 |34.98Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,9 +242,28 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "NULL"
-      - NULL 2
-      - NULL 3
+      - CA_167 |128.55Mb
+      - DE_326 |46.37Mb
+      - DE_327 |43.25Mb
+      - GB_423 |52.89Mb
+      - GB_424 |52.86Mb
+      - RU_782 |37.94Mb
+      - GB_396 |67.02Mb
+      - GB_397 |64.45Mb
+      - US_921 |81.57Mb
+      - US_925 |81.75Mb
+      - LT_566 |33.27Mb
+      - LT_568 |35.51Mb
+      - LT_569 |42.96Mb
+      - LT_571 |35.82Mb
+      - LT_579 |34.60Mb
+      - LT_590 |43.52Mb
+      - LT_591 |32.10Mb
+      - LT_592 |33.27Mb
+      - LT_594 |41.93Mb
+      - LT_597 |34.78Mb
+      - LT_599 |43.28Mb
+      - LT_603 |34.98Mb
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
