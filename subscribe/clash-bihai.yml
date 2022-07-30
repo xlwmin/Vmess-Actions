@@ -5,69 +5,85 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _20 |54.80Mb, server: 141.11.122.160, port: 25812, type: vmess, uuid: eb7cb7a0-2daa-4c48-e76d-d99ae3956a98, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: _39 |57.83Mb, server: 141.11.122.160, port: 25812, type: vmess, uuid: eb7cb7a0-2daa-4c48-e76d-d99ae3956a98, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: FR_417 |51.24Mb, server: 51.195.35.134, port: 443, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: www.98272029.xyz, network: ws, ws-opts: {path: /path/273213070933}}
+  - {name: GB_442 |66.96Mb, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, skip-cert-verify: true, udp: true}
+  - {name: GB_443 |63.62Mb, server: jgwld4.gaox.ml, port: 443, type: trojan, password: 58d32c66-43b1-4561-9951-d87c9123774e, skip-cert-verify: true, udp: true}
   - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
-  - {name: NULL 2, server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: sEscPBiAD9K$&@79, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - _20 |54.80Mb
+      - _39 |57.83Mb
+      - FR_417 |51.24Mb
+      - GB_442 |66.96Mb
+      - GB_443 |63.62Mb
       - "NULL"
-      - NULL 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - _20 |54.80Mb
+      - _39 |57.83Mb
+      - FR_417 |51.24Mb
+      - GB_442 |66.96Mb
+      - GB_443 |63.62Mb
       - "NULL"
-      - NULL 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _20 |54.80Mb
+      - _39 |57.83Mb
+      - FR_417 |51.24Mb
+      - GB_442 |66.96Mb
+      - GB_443 |63.62Mb
       - "NULL"
-      - NULL 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _20 |54.80Mb
+      - _39 |57.83Mb
+      - FR_417 |51.24Mb
+      - GB_442 |66.96Mb
+      - GB_443 |63.62Mb
       - "NULL"
-      - NULL 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - _20 |54.80Mb
+      - _39 |57.83Mb
+      - FR_417 |51.24Mb
+      - GB_442 |66.96Mb
+      - GB_443 |63.62Mb
       - "NULL"
-      - NULL 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - _20 |54.80Mb
+      - _39 |57.83Mb
+      - FR_417 |51.24Mb
+      - GB_442 |66.96Mb
+      - GB_443 |63.62Mb
       - "NULL"
-      - NULL 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _20 |54.80Mb
+      - _39 |57.83Mb
+      - FR_417 |51.24Mb
+      - GB_442 |66.96Mb
+      - GB_443 |63.62Mb
       - "NULL"
-      - NULL 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -90,9 +106,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _20 |54.80Mb
+      - _39 |57.83Mb
+      - FR_417 |51.24Mb
+      - GB_442 |66.96Mb
+      - GB_443 |63.62Mb
       - "NULL"
-      - NULL 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
